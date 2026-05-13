@@ -3,448 +3,1670 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>VicDavis Auto Link | Premium Cars & USA Imports | Accra, Ghana</title>
-<meta name="description" content="Ghana's most trusted car dealership since 2009. Buy premium vehicles, import directly from USA via Copart & IAAI, sell your car fast. 500+ cars imported. Opposite Dansoman Police Station, Accra.">
-<meta property="og:title" content="VicDavis Auto Link | Premium Cars Ghana">
-<meta property="og:description" content="Your Ultimate Auto For Your Luxury and Comfort. Trusted since 2009. Official Copart & IAAI Partner.">
+<title>VicDavis Auto Link | Premium Car Dealership Ghana</title>
+<meta name="description" content="Ghana's most trusted car dealership since 2009. Import directly from USA via Copart & IAAI. 500+ cars imported. Opposite Dansoman Police Station, Accra.">
+<meta property="og:title" content="VicDavis Auto Link | Premium Car Dealership Ghana">
+<meta property="og:description" content="Your Ultimate Auto For Your Luxury and Comfort. Official Copart & IAAI Partner.">
 <meta property="og:type" content="website">
-<meta name="theme-color" content="#0D2B5E">
+<meta name="theme-color" content="#001F3F">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet">
+
 <style>
-:root{
-  --navy:#0D2B5E;
-  --navy-dark:#071A3E;
-  --navy-mid:#1a3f7a;
-  --red:#D62828;
-  --red-h:#b82020;
-  --white:#FFFFFF;
-  --off:#F7F9FC;
-  --gl:#F1F4FA;
-  --gm:#E2E8F0;
-  --td:#0A1628;
-  --tm:#4A5568;
-  --tl:#8896AB;
-  --gold:#F59E0B;
-  --green:#059669;
-  --sh1:0 1px 4px rgba(13,43,94,.07);
-  --sh2:0 4px 16px rgba(13,43,94,.11);
-  --sh3:0 8px 32px rgba(13,43,94,.15);
-  --sh4:0 20px 60px rgba(13,43,94,.20);
-  --r1:8px;--r2:14px;--r3:20px;--r4:28px;
-  --tr:.3s cubic-bezier(.4,0,.2,1);
-  --fd:'Barlow Condensed',sans-serif;
-  --fb:'Plus Jakarta Sans',sans-serif;
+/* ============================
+   CSS VARIABLES & RESET
+   ============================ */
+:root {
+  --navy:        #001F3F;
+  --navy-2:      #002347;
+  --navy-mid:    #003366;
+  --navy-light:  #00498A;
+  --red:         #D32F2F;
+  --red-h:       #B71C1C;
+  --red-light:   rgba(211,47,47,.12);
+  --steel:       #F0F3F7;
+  --steel-2:     #E8ECF2;
+  --steel-3:     #D8DFE9;
+  --white:       #FFFFFF;
+  --text-dark:   #0A1628;
+  --text-mid:    #3D4F65;
+  --text-light:  #7A8CA0;
+  --gold:        #F59E0B;
+  --green:       #059669;
+  --sh1: 0 1px 3px rgba(0,31,63,.06);
+  --sh2: 0 4px 16px rgba(0,31,63,.10);
+  --sh3: 0 8px 32px rgba(0,31,63,.14);
+  --sh4: 0 20px 60px rgba(0,31,63,.18);
+  --sh5: 0 32px 80px rgba(0,31,63,.24);
+  --r1: 6px; --r2: 12px; --r3: 18px; --r4: 24px;
+  --tr: .28s cubic-bezier(.4,0,.2,1);
+  --fh: 'Oswald', sans-serif;
+  --fb: 'DM Sans', sans-serif;
 }
-*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth}
-body{font-family:var(--fb);color:var(--td);background:var(--white);overflow-x:hidden;-webkit-font-smoothing:antialiased}
-img{max-width:100%;display:block}
-a{text-decoration:none;color:inherit}
-button{cursor:pointer;border:none;background:none;font-family:var(--fb)}
-ul{list-style:none}
-.container{max-width:1200px;margin:0 auto;padding:0 24px}
-.sec{padding:88px 0}
-.sec-grey{background:var(--off)}
-
-/* ---------- LABELS & TITLES ---------- */
-.lbl{font-size:11px;font-weight:700;letter-spacing:3.5px;text-transform:uppercase;color:var(--red);display:block;margin-bottom:12px}
-.lbl-lt{color:rgba(255,255,255,.55)}
-.stitle{font-family:var(--fd);font-size:clamp(30px,4.5vw,52px);font-weight:800;line-height:1.05;letter-spacing:-.3px;color:var(--td)}
-.stitle-wh{color:var(--white)}
-.stitle em{color:var(--red);font-style:normal}
-.ssub{font-size:15px;color:var(--tm);line-height:1.75;max-width:520px;margin-top:14px}
-.ssub-wh{color:rgba(255,255,255,.7)}
-
-/* ---------- BUTTONS ---------- */
-.btn{display:inline-flex;align-items:center;gap:8px;padding:13px 26px;border-radius:var(--r1);font-size:13px;font-weight:700;letter-spacing:.3px;transition:all var(--tr);white-space:nowrap;cursor:pointer;font-family:var(--fb)}
-.btn-r{background:var(--red);color:#fff;box-shadow:0 4px 14px rgba(214,40,40,.30)}
-.btn-r:hover{background:var(--red-h);transform:translateY(-1px);box-shadow:0 6px 20px rgba(214,40,40,.40)}
-.btn-n{background:var(--navy);color:#fff;box-shadow:0 4px 14px rgba(13,43,94,.25)}
-.btn-n:hover{background:var(--navy-dark);transform:translateY(-1px)}
-.btn-on{background:transparent;color:var(--navy);border:2px solid var(--navy)}
-.btn-on:hover{background:var(--navy);color:#fff}
-.btn-ow{background:transparent;color:#fff;border:2px solid rgba(255,255,255,.45)}
-.btn-ow:hover{background:rgba(255,255,255,.1);border-color:#fff}
-.btn-wa{background:#25D366;color:#fff}
-.btn-wa:hover{background:#1dba58;transform:translateY(-1px)}
-.btn-lg{padding:17px 36px;font-size:14px;border-radius:var(--r2)}
-.btn-sm{padding:9px 18px;font-size:12px}
-.btn-full{width:100%;justify-content:center}
-
-/* ---------- NAVBAR ---------- */
-#nb{position:fixed;top:0;left:0;right:0;z-index:1000;transition:all .4s ease}
-#nb.sc{background:var(--white);box-shadow:0 2px 24px rgba(13,43,94,.09)}
-.ni{display:flex;align-items:center;justify-content:space-between;height:72px;padding:0 28px;max-width:1360px;margin:0 auto}
-.nl{display:flex;align-items:center;gap:2px}
-.nl a{padding:8px 13px;font-size:13px;font-weight:600;color:rgba(255,255,255,.9);border-radius:6px;transition:all var(--tr)}
-#nb.sc .nl a{color:var(--td)}
-.nl a:hover{color:var(--red);background:rgba(214,40,40,.07)}
-.nact{display:flex;align-items:center;gap:10px}
-.nph{display:flex;align-items:center;gap:6px;font-size:12px;font-weight:700;color:rgba(255,255,255,.85);padding:8px 15px;border-radius:6px;border:1.5px solid rgba(255,255,255,.25);transition:all var(--tr)}
-#nb.sc .nph{color:var(--navy);border-color:var(--gm)}
-.nph:hover{color:var(--red);border-color:var(--red)}
-.hbg{display:none;flex-direction:column;gap:5px;padding:8px;cursor:pointer;background:none;border:none}
-.hbg span{width:24px;height:2px;background:#fff;border-radius:2px;transition:all .3s}
-#nb.sc .hbg span{background:var(--navy)}
-.hbg.op span:nth-child(1){transform:rotate(45deg) translate(5px,5px)}
-.hbg.op span:nth-child(2){opacity:0}
-.hbg.op span:nth-child(3){transform:rotate(-45deg) translate(5px,-5px)}
-.mnav{display:none;position:fixed;top:72px;left:0;right:0;background:#fff;border-top:1px solid var(--gm);box-shadow:var(--sh3);z-index:999;padding:20px 28px 32px}
-.mnav.op{display:block}
-.mnav a{display:block;padding:13px 0;font-size:15px;font-weight:600;color:var(--td);border-bottom:1px solid var(--gl)}
-.mnav-btns{margin-top:20px;display:flex;flex-direction:column;gap:10px}
-
-/* Logo text fallback */
-.logo-txt{display:flex;align-items:center;gap:10px}
-.logo-icon{width:42px;height:42px;background:linear-gradient(135deg,var(--navy),var(--navy-mid));border-radius:9px;display:flex;align-items:center;justify-content:center}
-.logo-icon span{font-family:var(--fd);font-size:14px;font-weight:900;color:#fff;letter-spacing:.5px}
-.logo-words{line-height:1}
-.logo-top{font-family:var(--fd);font-size:18px;font-weight:900;color:#fff;letter-spacing:.5px}
-#nb.sc .logo-top{color:var(--navy)}
-.logo-bot{font-size:9px;font-weight:700;letter-spacing:3px;color:rgba(255,255,255,.55)}
-#nb.sc .logo-bot{color:var(--tl)}
-
-/* ---------- HERO ---------- */
-#hero{min-height:100vh;background:linear-gradient(135deg,#040f23 0%,#071A3E 40%,#0d2b5e 70%,#1a3f7a 100%);position:relative;display:flex;flex-direction:column;justify-content:center;overflow:hidden}
-.h-pat{position:absolute;inset:0;background-image:radial-gradient(circle at 75% 45%,rgba(214,40,40,.14) 0%,transparent 55%),radial-gradient(circle at 5% 85%,rgba(255,255,255,.04) 0%,transparent 45%);pointer-events:none}
-.h-grid{position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.025) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.025) 1px,transparent 1px);background-size:64px 64px;pointer-events:none}
-.h-car-bg{position:absolute;right:-40px;bottom:0;width:52%;opacity:.06;pointer-events:none}
-.hc{position:relative;z-index:2;padding:120px 28px 60px;max-width:1360px;margin:0 auto;width:100%}
-.h-badge{display:inline-flex;align-items:center;gap:9px;background:rgba(214,40,40,.18);border:1px solid rgba(214,40,40,.38);border-radius:100px;padding:6px 17px;font-size:11px;font-weight:700;color:#ff9090;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:22px}
-.h-badge::before{content:'';width:6px;height:6px;background:#ff6060;border-radius:50%;animation:pulse 2s infinite}
-@keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.4;transform:scale(1.5)}}
-.h-title{font-family:var(--fd);font-size:clamp(46px,7.5vw,88px);font-weight:900;line-height:.98;color:#fff;margin-bottom:20px;letter-spacing:-1.5px}
-.h-title em{color:var(--red);font-style:normal}
-.h-sub{font-size:clamp(14px,1.8vw,17px);color:rgba(255,255,255,.65);line-height:1.75;max-width:520px;margin-bottom:38px}
-.h-ctas{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:52px}
-
-/* Hero search */
-.h-srch{background:#fff;border-radius:var(--r3);padding:22px 26px;box-shadow:0 24px 70px rgba(0,0,0,.35);max-width:880px}
-.h-slbl{font-size:12px;font-weight:700;color:var(--tm);margin-bottom:14px;letter-spacing:.5px}
-.h-sgrid{display:grid;grid-template-columns:1fr 1fr 1fr auto;gap:10px;align-items:end}
-.h-sf label{display:block;font-size:10px;font-weight:700;color:var(--tl);text-transform:uppercase;letter-spacing:1px;margin-bottom:6px}
-.h-sf select,.h-sf input{width:100%;padding:11px 13px;border:1.5px solid var(--gm);border-radius:var(--r1);font-family:var(--fb);font-size:13px;font-weight:500;color:var(--td);background:var(--gl);outline:none;transition:border-color var(--tr);-webkit-appearance:none;appearance:none}
-.h-sf select:focus,.h-sf input:focus{border-color:var(--navy);background:#fff}
-
-/* hero trust */
-.h-trust{display:flex;align-items:center;gap:28px;flex-wrap:wrap;margin-top:48px}
-.h-ti{display:flex;align-items:center;gap:9px;font-size:12px;font-weight:600;color:rgba(255,255,255,.65)}
-.h-ti-ic{width:30px;height:30px;background:rgba(255,255,255,.09);border:1px solid rgba(255,255,255,.12);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:13px}
-
-/* ---------- STATS ---------- */
-.sbar{background:var(--red);padding:0}
-.sbi{display:grid;grid-template-columns:repeat(4,1fr);max-width:1360px;margin:0 auto;padding:0 28px}
-.si{text-align:center;padding:20px 16px;border-right:1px solid rgba(255,255,255,.18)}
-.si:last-child{border-right:none}
-.sn{font-family:var(--fd);font-size:30px;font-weight:900;color:#fff;line-height:1}
-.sl{font-size:11px;color:rgba(255,255,255,.8);font-weight:600;margin-top:4px;letter-spacing:.3px}
-
-/* ---------- INVENTORY ---------- */
-.inv-hd{display:flex;align-items:flex-end;justify-content:space-between;margin-bottom:28px;flex-wrap:wrap;gap:16px}
-.frow{display:grid;grid-template-columns:repeat(4,1fr) auto;gap:10px;background:var(--gl);border-radius:var(--r2);padding:16px;margin-bottom:28px}
-.frow select{padding:10px 13px;border:1.5px solid var(--gm);border-radius:var(--r1);font-family:var(--fb);font-size:13px;font-weight:500;color:var(--td);background:#fff;outline:none;cursor:pointer;-webkit-appearance:none;appearance:none;transition:border-color var(--tr)}
-.frow select:focus{border-color:var(--navy)}
-.cgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
-.cc{background:#fff;border-radius:var(--r3);overflow:hidden;box-shadow:var(--sh1);border:1px solid var(--gm);transition:all var(--tr)}
-.cc:hover{transform:translateY(-5px);box-shadow:var(--sh4);border-color:transparent}
-.cc-img{position:relative;height:200px;overflow:hidden;background:var(--gl)}
-.cc-img img{width:100%;height:100%;object-fit:cover;transition:transform .5s ease}
-.cc:hover .cc-img img{transform:scale(1.06)}
-.cbdg{position:absolute;top:12px;left:12px;font-size:10px;font-weight:800;letter-spacing:1.2px;text-transform:uppercase;padding:4px 11px;border-radius:100px;color:#fff}
-.cbdg-hot{background:var(--red)}
-.cbdg-new{background:var(--green)}
-.cbdg-lux{background:var(--navy)}
-.cwl{position:absolute;top:12px;right:12px;width:34px;height:34px;background:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:15px;box-shadow:var(--sh1);transition:all var(--tr);cursor:pointer;border:none}
-.cwl:hover{transform:scale(1.12)}
-.ccb{padding:16px 18px 20px}
-.cmk{font-size:10px;font-weight:700;color:var(--tl);text-transform:uppercase;letter-spacing:1.2px;margin-bottom:4px}
-.cnm{font-family:var(--fd);font-size:20px;font-weight:700;color:var(--td);margin-bottom:10px;line-height:1.2}
-.csps{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:14px}
-.csp{display:flex;align-items:center;gap:4px;font-size:11px;color:var(--tm);font-weight:500}
-.cpr{display:flex;align-items:center;justify-content:space-between;padding-top:12px;border-top:1px solid var(--gl)}
-.cprice{font-family:var(--fd);font-size:22px;font-weight:800;color:var(--navy)}
-.cmo{font-size:10px;color:var(--tl);margin-top:1px}
-.lmw{text-align:center;margin-top:44px}
-
-/* ---------- IMPORT DARK ---------- */
-.imp-sec{background:linear-gradient(135deg,#040f23 0%,var(--navy-dark) 50%,#0a2050 100%);position:relative;overflow:hidden}
-.imp-bg{position:absolute;right:-80px;top:-60px;width:60%;height:calc(100% + 120px);object-fit:cover;opacity:.08;pointer-events:none}
-.imp-inner{position:relative;z-index:2;display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
-.imp-steps{display:flex;flex-direction:column;gap:18px;margin-top:28px}
-.imp-step{display:flex;align-items:flex-start;gap:16px}
-.snum{width:40px;height:40px;background:rgba(214,40,40,.18);border:1.5px solid rgba(214,40,40,.35);border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:var(--fd);font-size:15px;font-weight:800;color:var(--red);flex-shrink:0}
-.stxt h4{font-size:14px;font-weight:700;color:#fff;margin-bottom:3px}
-.stxt p{font-size:12px;color:rgba(255,255,255,.55);line-height:1.5}
-.imp-cards{display:grid;grid-template-columns:1fr 1fr;gap:14px}
-.icard{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.09);border-radius:var(--r2);padding:20px;text-align:center;transition:all var(--tr)}
-.icard:hover{background:rgba(255,255,255,.09);border-color:rgba(214,40,40,.35)}
-.icard-ic{font-size:30px;margin-bottom:10px}
-.icard h4{font-size:13px;font-weight:700;color:#fff;margin-bottom:4px}
-.icard p{font-size:11px;color:rgba(255,255,255,.5)}
-.ptners{display:flex;gap:12px;margin-top:28px;align-items:center;flex-wrap:wrap}
-.pt{font-family:var(--fd);font-size:15px;font-weight:900;padding:9px 20px;border-radius:7px;letter-spacing:.5px;color:#fff}
-.imp-cta-box{background:rgba(214,40,40,.1);border:1px solid rgba(214,40,40,.25);border-radius:var(--r2);padding:28px;margin-top:20px;text-align:center}
-.imp-cta-box h3{font-family:var(--fd);font-size:26px;font-weight:800;color:#fff;margin-bottom:6px}
-.imp-cta-box p{font-size:12px;color:rgba(255,255,255,.55);margin-bottom:18px}
-
-/* ---------- SERVICES ---------- */
-.sgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:48px}
-.svc{background:#fff;border-radius:var(--r3);padding:30px 26px;border:1px solid var(--gm);transition:all var(--tr);position:relative;overflow:hidden}
-.svc::after{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:var(--navy);transform:scaleX(0);transition:transform var(--tr);transform-origin:left}
-.svc:hover::after{transform:scaleX(1)}
-.svc:hover{transform:translateY(-5px);box-shadow:var(--sh3)}
-.svc-ic{width:54px;height:54px;background:var(--gl);border-radius:var(--r1);display:flex;align-items:center;justify-content:center;font-size:24px;margin-bottom:18px}
-.svc h3{font-family:var(--fd);font-size:19px;font-weight:700;color:var(--td);margin-bottom:9px}
-.svc p{font-size:13px;color:var(--tm);line-height:1.7}
-
-/* ---------- CALCULATOR ---------- */
-.cal-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
-.cal-wrap{background:#fff;border-radius:var(--r4);padding:40px;box-shadow:var(--sh4);border:1px solid var(--gm)}
-.cal-wrap h3{font-family:var(--fd);font-size:26px;font-weight:800;color:var(--td);margin-bottom:6px}
-.cal-wrap>p{font-size:13px;color:var(--tm);margin-bottom:26px}
-.rg{margin-bottom:22px}
-.rg label{display:flex;justify-content:space-between;font-size:12px;font-weight:700;color:var(--td);margin-bottom:8px}
-.rg label span{color:var(--red)}
-input[type=range]{width:100%;height:4px;background:var(--gm);border-radius:2px;outline:none;-webkit-appearance:none;appearance:none;cursor:pointer}
-input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:18px;height:18px;background:var(--navy);border-radius:50%;cursor:pointer;box-shadow:0 2px 8px rgba(13,43,94,.25)}
-.cal-res{background:linear-gradient(135deg,var(--navy),var(--navy-mid));border-radius:var(--r2);padding:24px;text-align:center}
-.cal-res p{font-size:12px;color:rgba(255,255,255,.65);margin-bottom:5px}
-.cal-mo{font-family:var(--fd);font-size:44px;font-weight:900;color:#fff}
-.cal-note{font-size:10px;color:rgba(255,255,255,.45);margin-top:6px}
-.fin-pts{display:flex;flex-direction:column;gap:14px;margin-top:24px}
-.fin-pt{display:flex;gap:13px;align-items:flex-start}
-.fin-pt strong{display:block;font-size:13px;font-weight:700;color:var(--td)}
-.fin-pt span{font-size:12px;color:var(--tm)}
-
-/* ---------- SELL ---------- */
-.sell-sec{background:linear-gradient(135deg,#040f23 0%,var(--navy-dark) 60%,#0a1e40 100%);position:relative;overflow:hidden}
-.sell-inner{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
-.sell-steps{display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px;margin-top:28px}
-.ss{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:var(--r2);padding:18px 14px;text-align:center}
-.ss-n{font-family:var(--fd);font-size:38px;font-weight:900;color:rgba(214,40,40,.35);line-height:1;margin-bottom:8px}
-.ss h4{font-size:12px;font-weight:700;color:#fff;margin-bottom:3px}
-.ss p{font-size:11px;color:rgba(255,255,255,.45)}
-.sfbox{background:rgba(255,255,255,.045);border:1px solid rgba(255,255,255,.1);border-radius:var(--r4);padding:32px}
-.sfbox h3{font-family:var(--fd);font-size:22px;font-weight:700;color:#fff;margin-bottom:18px}
-.fg{margin-bottom:12px}
-.fg label{display:block;font-size:10px;font-weight:700;color:rgba(255,255,255,.5);text-transform:uppercase;letter-spacing:1px;margin-bottom:5px}
-.fg input,.fg select,.fg textarea{width:100%;padding:11px 13px;border:1.5px solid rgba(255,255,255,.1);border-radius:var(--r1);background:rgba(255,255,255,.06);font-family:var(--fb);font-size:13px;color:#fff;outline:none;transition:border-color var(--tr)}
-.fg input::placeholder,.fg textarea::placeholder{color:rgba(255,255,255,.3)}
-.fg input:focus,.fg select:focus{border-color:var(--red);background:rgba(255,255,255,.09)}
-.fg select option{background:var(--navy-dark);color:#fff}
-.fr{display:grid;grid-template-columns:1fr 1fr;gap:10px}
-
-/* Light form (contact, modal) */
-.lfg{margin-bottom:12px}
-.lfg label{display:block;font-size:10px;font-weight:700;color:var(--tm);text-transform:uppercase;letter-spacing:1px;margin-bottom:5px}
-.lfg input,.lfg select,.lfg textarea{width:100%;padding:11px 13px;border:1.5px solid var(--gm);border-radius:var(--r1);background:var(--gl);font-family:var(--fb);font-size:13px;color:var(--td);outline:none;transition:border-color var(--tr);-webkit-appearance:none;appearance:none}
-.lfg input::placeholder,.lfg textarea::placeholder{color:var(--tl)}
-.lfg input:focus,.lfg select:focus,.lfg textarea:focus{border-color:var(--navy);background:#fff}
-.lfg textarea{min-height:90px;resize:vertical}
-.lfr{display:grid;grid-template-columns:1fr 1fr;gap:10px}
-
-/* ---------- ABOUT ---------- */
-.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
-.stat-boxes{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:28px}
-.sbox{background:var(--gl);border-radius:var(--r2);padding:20px;text-align:center}
-.sbox-n{font-family:var(--fd);font-size:38px;font-weight:900}
-.sbox-l{font-size:12px;font-weight:600;color:var(--tm);margin-top:2px}
-.vid-frame{border-radius:var(--r4);overflow:hidden;box-shadow:var(--sh4);background:var(--navy-dark);aspect-ratio:16/10;position:relative}
-.vid-ph{width:100%;height:100%;background:linear-gradient(135deg,var(--navy) 0%,var(--navy-dark) 100%);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;min-height:240px}
-.vid-btn{width:72px;height:72px;background:var(--red);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:26px;cursor:pointer;box-shadow:0 0 0 14px rgba(214,40,40,.15);border:none;color:#fff;transition:all var(--tr)}
-.vid-btn:hover{transform:scale(1.07)}
-.vid-ph p{font-size:13px;color:rgba(255,255,255,.5)}
-.copart-badge{background:var(--navy);border-radius:var(--r2);padding:18px 22px;margin-top:14px;display:flex;align-items:center;gap:14px}
-.copart-badge div strong{display:block;font-size:13px;font-weight:700;color:#fff}
-.copart-badge div span{font-size:11px;color:rgba(255,255,255,.5)}
-
-/* ---------- TESTIMONIALS ---------- */
-.tgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:36px}
-.rc{background:#fff;border-radius:var(--r3);padding:22px;border:1px solid var(--gm);box-shadow:var(--sh1);transition:all var(--tr)}
-.rc:hover{box-shadow:var(--sh2);transform:translateY(-2px)}
-.rh{display:flex;align-items:center;gap:12px;margin-bottom:14px}
-.rav{width:44px;height:44px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:var(--fd);font-size:18px;font-weight:800;color:#fff;flex-shrink:0}
-.ri h4{font-size:13px;font-weight:700;color:var(--td)}
-.rm{display:flex;align-items:center;gap:6px;margin-top:2px}
-.stars{color:var(--gold);font-size:11px;letter-spacing:1px}
-.rdate{font-size:10px;color:var(--tl)}
-.gb{margin-left:auto}
-.rt{font-size:13px;color:var(--tm);line-height:1.7}
-.rtags{display:flex;gap:5px;flex-wrap:wrap;margin-top:12px}
-.rtag{font-size:10px;font-weight:600;padding:3px 9px;border-radius:100px;background:var(--gl);color:var(--tm)}
-
-/* ---------- FAQ ---------- */
-.faq-list{max-width:740px;margin:36px auto 0}
-.fi{border-bottom:1px solid var(--gm)}
-.fq{display:flex;align-items:center;justify-content:space-between;padding:18px 0;font-size:15px;font-weight:600;color:var(--td);cursor:pointer;gap:16px;user-select:none}
-.fic{width:28px;height:28px;border-radius:50%;background:var(--gl);display:flex;align-items:center;justify-content:center;font-size:17px;font-weight:400;flex-shrink:0;transition:all var(--tr);color:var(--td)}
-.fi.op .fic{background:var(--navy);color:#fff;transform:rotate(45deg)}
-.fa{font-size:13px;color:var(--tm);line-height:1.75;padding-bottom:18px;display:none}
-.fi.op .fa{display:block}
-
-/* ---------- CONTACT ---------- */
-.cg{display:grid;grid-template-columns:1fr 1.4fr;gap:40px;align-items:start}
-.cd{display:flex;align-items:flex-start;gap:13px;margin-bottom:18px}
-.cdi{width:42px;height:42px;background:var(--gl);border-radius:var(--r1);display:flex;align-items:center;justify-content:center;font-size:17px;flex-shrink:0}
-.cd h4{font-size:10px;font-weight:700;color:var(--tl);text-transform:uppercase;letter-spacing:1px;margin-bottom:3px}
-.cd a,.cd p{font-size:14px;font-weight:600;color:var(--td)}
-.cd a:hover{color:var(--red)}
-.opbdg{display:inline-flex;align-items:center;gap:6px;color:#fff;font-size:11px;font-weight:700;padding:3px 10px;border-radius:100px;margin-top:4px}
-.opbdg::before{content:'';width:5px;height:5px;background:#fff;border-radius:50%}
-.cf{background:#fff;border:1px solid var(--gm);border-radius:var(--r4);padding:36px;box-shadow:var(--sh2)}
-.cf h3{font-family:var(--fd);font-size:22px;font-weight:800;color:var(--td);margin-bottom:18px}
-
-/* ---------- MODAL ---------- */
-.mover{display:none;position:fixed;inset:0;background:rgba(4,15,35,.88);z-index:2000;align-items:center;justify-content:center;padding:20px}
-.mover.op{display:flex}
-.mod{background:#fff;border-radius:var(--r4);padding:38px;max-width:540px;width:100%;max-height:90vh;overflow-y:auto;position:relative;animation:min .3s ease}
-@keyframes min{from{opacity:0;transform:scale(.94) translateY(20px)}to{opacity:1;transform:scale(1) translateY(0)}}
-.mcl{position:absolute;top:14px;right:14px;width:34px;height:34px;background:var(--gl);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:20px;cursor:pointer;transition:all var(--tr);border:none;color:var(--td)}
-.mcl:hover{background:var(--gm)}
-.mod h2{font-family:var(--fd);font-size:26px;font-weight:800;color:var(--td);margin-bottom:5px}
-.mod>p{font-size:13px;color:var(--tm);margin-bottom:22px}
-.btypes{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:22px}
-.bt{padding:14px 10px;border:2px solid var(--gm);border-radius:var(--r2);text-align:center;cursor:pointer;transition:all var(--tr);background:#fff}
-.bt:hover,.bt.sel{border-color:var(--navy);background:var(--navy);color:#fff}
-.bt-ic{font-size:24px;margin-bottom:6px}
-.bt p{font-size:11px;font-weight:700;color:inherit;margin:0}
-
-/* ---------- FOOTER ---------- */
-footer{background:var(--navy-dark);color:#fff}
-.ft{padding:60px 0 36px;border-bottom:1px solid rgba(255,255,255,.07)}
-.fg4{display:grid;grid-template-columns:2fr 1fr 1fr 1.5fr;gap:40px}
-.fbrand p{font-size:13px;color:rgba(255,255,255,.5);line-height:1.7;margin:14px 0 18px}
-.fsoc{display:flex;gap:9px}
-.fsb{width:38px;height:38px;border-radius:8px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.08);display:flex;align-items:center;justify-content:center;font-size:15px;transition:all var(--tr)}
-.fsb:hover{background:var(--red);border-color:var(--red)}
-.fc h4{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:2px;color:rgba(255,255,255,.35);margin-bottom:16px}
-.fc li{margin-bottom:9px}
-.fc a{font-size:13px;color:rgba(255,255,255,.6);transition:color var(--tr)}
-.fc a:hover{color:var(--red)}
-.fci{display:flex;gap:10px;align-items:flex-start;margin-bottom:12px}
-.fci-ic{font-size:15px;margin-top:1px}
-.fci p,.fci a{font-size:12px;color:rgba(255,255,255,.55);line-height:1.5}
-.fci a:hover{color:var(--red)}
-.fb{padding:18px 0;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px}
-.fb p{font-size:12px;color:rgba(255,255,255,.3)}
-.fpbs{display:flex;gap:10px}
-.fpb{font-size:10px;font-weight:800;padding:4px 11px;border-radius:4px;border:1px solid rgba(255,255,255,.18);color:rgba(255,255,255,.45);letter-spacing:.5px}
-
-/* ---------- FLOATING ---------- */
-.fl-btns{position:fixed;bottom:24px;right:24px;display:flex;flex-direction:column;gap:10px;z-index:900}
-.fl-btn{width:54px;height:54px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:21px;box-shadow:0 4px 18px rgba(0,0,0,.22);transition:all var(--tr);text-decoration:none}
-.fl-btn:hover{transform:scale(1.1)}
-.fl-wa{background:#25D366}
-.fl-ph{background:var(--navy)}
-
-/* ---------- TOAST ---------- */
-.toast{position:fixed;bottom:24px;left:50%;transform:translateX(-50%) translateY(110px);background:var(--td);color:#fff;padding:13px 26px;border-radius:var(--r2);font-size:13px;font-weight:600;box-shadow:var(--sh4);z-index:3000;transition:transform .4s ease;display:flex;align-items:center;gap:9px;white-space:nowrap}
-.toast.show{transform:translateX(-50%) translateY(0)}
-
-/* ---------- SCROLL ANIM ---------- */
-.fu{opacity:0;transform:translateY(28px);transition:opacity .65s ease,transform .65s ease}
-.fu.vis{opacity:1;transform:translateY(0)}
-.fd1{transition-delay:.1s}
-.fd2{transition-delay:.2s}
-.fd3{transition-delay:.3s}
-.fd4{transition-delay:.4s}
-
-/* ---------- RESPONSIVE ---------- */
-@media(max-width:1100px){
-  .cgrid{grid-template-columns:repeat(2,1fr)}
-  .sgrid{grid-template-columns:repeat(2,1fr)}
-  .fg4{grid-template-columns:1fr 1fr}
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: auto; }
+body {
+  font-family: var(--fb);
+  color: var(--text-dark);
+  background: var(--white);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
 }
-@media(max-width:900px){
-  .nl,.nact{display:none}
-  .hbg{display:flex}
-  .imp-inner,.sell-inner,.about-grid,.cal-grid,.cg{grid-template-columns:1fr}
-  .h-sgrid{grid-template-columns:1fr 1fr}
-  .tgrid{grid-template-columns:repeat(2,1fr)}
-  .sbi{grid-template-columns:repeat(2,1fr)}
-  .si:nth-child(odd){border-right:1px solid rgba(255,255,255,.18)}
-  .si:nth-child(even){border-right:none}
-  .si:nth-child(1),.si:nth-child(2){border-bottom:1px solid rgba(255,255,255,.18)}
-  .frow{grid-template-columns:1fr 1fr}
-  .cgrid{grid-template-columns:1fr}
-  .imp-cards{grid-template-columns:1fr 1fr}
-  .sell-steps{grid-template-columns:1fr}
-  .fg4{grid-template-columns:1fr}
-  .fb{flex-direction:column;text-align:center}
+img { max-width: 100%; display: block; }
+a { text-decoration: none; color: inherit; }
+button { cursor: pointer; border: none; background: none; font-family: var(--fb); }
+ul { list-style: none; }
+.container { max-width: 1240px; margin: 0 auto; padding: 0 28px; }
+.sec { padding: 96px 0; }
+.sec-steel { background: var(--steel); }
+.sec-dark { background: var(--navy); }
+
+/* ============================
+   TYPOGRAPHY
+   ============================ */
+.lbl {
+  font-family: var(--fb);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--red);
+  display: block;
+  margin-bottom: 14px;
 }
-@media(max-width:600px){
-  .sec{padding:64px 0}
-  .h-sgrid{grid-template-columns:1fr}
-  .h-ctas{flex-direction:column}
-  .h-ctas .btn{width:100%;justify-content:center}
-  .tgrid{grid-template-columns:1fr}
-  .btypes{grid-template-columns:1fr}
-  .fr,.lfr{grid-template-columns:1fr}
-  .sgrid{grid-template-columns:1fr}
-  .stat-boxes{grid-template-columns:1fr 1fr}
-  .cf,.sfbox,.cal-wrap{padding:24px 18px}
-  .mod{padding:28px 18px}
-  .h-trust{gap:12px}
+.lbl-lt { color: rgba(255,255,255,.45); }
+.stitle {
+  font-family: var(--fh);
+  font-size: clamp(32px, 4.5vw, 54px);
+  font-weight: 700;
+  line-height: 1.06;
+  letter-spacing: .5px;
+  color: var(--text-dark);
+  text-transform: uppercase;
+}
+.stitle em { color: var(--red); font-style: normal; }
+.stitle-wh { color: #fff; }
+.ssub {
+  font-size: 15px;
+  color: var(--text-mid);
+  line-height: 1.8;
+  max-width: 520px;
+  margin-top: 16px;
+  font-weight: 300;
+}
+.ssub-wh { color: rgba(255,255,255,.62); }
+
+/* ============================
+   BUTTONS
+   ============================ */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  padding: 13px 26px;
+  border-radius: var(--r1);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: .3px;
+  transition: all var(--tr);
+  white-space: nowrap;
+  cursor: pointer;
+  font-family: var(--fb);
+}
+.btn-r { background: var(--red); color: #fff; box-shadow: 0 4px 14px rgba(211,47,47,.28); }
+.btn-r:hover { background: var(--red-h); transform: translateY(-2px); box-shadow: 0 8px 22px rgba(211,47,47,.40); }
+.btn-n { background: var(--navy); color: #fff; }
+.btn-n:hover { background: var(--navy-2); transform: translateY(-2px); box-shadow: var(--sh3); }
+.btn-on { background: transparent; color: var(--navy); border: 1.5px solid var(--navy); }
+.btn-on:hover { background: var(--navy); color: #fff; }
+.btn-ow { background: transparent; color: #fff; border: 1.5px solid rgba(255,255,255,.38); }
+.btn-ow:hover { background: rgba(255,255,255,.09); border-color: #fff; }
+.btn-lg { padding: 16px 36px; font-size: 14px; font-weight: 600; }
+.btn-sm { padding: 9px 18px; font-size: 12px; }
+.btn-full { width: 100%; justify-content: center; }
+
+/* ============================
+   NAVBAR
+   ============================ */
+#nb {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 1000;
+  transition: all .35s ease;
+}
+#nb.sc {
+  background: rgba(255,255,255,.9);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  box-shadow: 0 1px 0 rgba(0,31,63,.08);
+}
+.ni {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 76px;
+  padding: 0 32px;
+  max-width: 1360px;
+  margin: 0 auto;
+}
+.n-logo {
+  display: flex;
+  align-items: center;
+  gap: 0;
+}
+.logo-svg-wrap {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+}
+.logo-name {
+  font-family: var(--fh);
+  font-size: 19px;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  color: #fff;
+  text-transform: uppercase;
+  line-height: 1;
+}
+.logo-sub {
+  font-family: var(--fb);
+  font-size: 9px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: rgba(255,255,255,.45);
+  margin-top: 2px;
+}
+#nb.sc .logo-name { color: var(--navy); }
+#nb.sc .logo-sub { color: var(--text-light); }
+.nl {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+.nl a {
+  padding: 8px 14px;
+  font-size: 12.5px;
+  font-weight: 500;
+  color: rgba(255,255,255,.88);
+  border-radius: var(--r1);
+  transition: all var(--tr);
+  letter-spacing: .2px;
+}
+#nb.sc .nl a { color: var(--text-dark); }
+.nl a:hover { color: var(--red); }
+.nact { display: flex; align-items: center; gap: 10px; }
+.n-call {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  font-weight: 600;
+  color: rgba(255,255,255,.82);
+  padding: 8px 16px;
+  border-radius: var(--r1);
+  border: 1.5px solid rgba(255,255,255,.22);
+  transition: all var(--tr);
+}
+#nb.sc .n-call { color: var(--navy); border-color: var(--steel-3); }
+.n-call:hover { color: var(--red); border-color: var(--red); }
+.n-sell-btn {
+  font-family: var(--fb);
+  font-size: 12.5px;
+  font-weight: 600;
+  padding: 9px 20px;
+  background: var(--red);
+  color: #fff;
+  border-radius: var(--r1);
+  transition: all var(--tr);
+  border: none;
+  cursor: pointer;
+}
+.n-sell-btn:hover { background: var(--red-h); transform: translateY(-1px); }
+
+.hbg {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  padding: 8px;
+  cursor: pointer;
+}
+.hbg span {
+  width: 22px;
+  height: 2px;
+  background: #fff;
+  border-radius: 2px;
+  transition: all .3s;
+  display: block;
+}
+#nb.sc .hbg span { background: var(--navy); }
+.hbg.op span:nth-child(1) { transform: rotate(45deg) translate(5px,5px); }
+.hbg.op span:nth-child(2) { opacity: 0; }
+.hbg.op span:nth-child(3) { transform: rotate(-45deg) translate(5px,-5px); }
+
+.mnav {
+  display: none;
+  position: fixed;
+  top: 76px; left: 0; right: 0;
+  background: rgba(255,255,255,.97);
+  backdrop-filter: blur(18px);
+  border-top: 1px solid var(--steel-2);
+  box-shadow: var(--sh3);
+  z-index: 999;
+  padding: 24px 32px 32px;
+}
+.mnav.op { display: block; }
+.mnav a {
+  display: block;
+  padding: 13px 0;
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--text-dark);
+  border-bottom: 1px solid var(--steel);
+}
+.mnav-btns { margin-top: 20px; display: flex; flex-direction: column; gap: 10px; }
+
+/* ============================
+   PAGE TRANSITION
+   ============================ */
+.pg-transition {
+  position: fixed;
+  inset: 0;
+  background: var(--navy);
+  z-index: 9999;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .25s ease;
+}
+.pg-transition.active { opacity: 1; pointer-events: all; }
+
+/* ============================
+   HERO
+   ============================ */
+#hero {
+  min-height: 100vh;
+  background: linear-gradient(160deg, #000d1e 0%, #001427 40%, var(--navy) 75%, #003366 100%);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+}
+.h-overlay {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse at 80% 30%, rgba(211,47,47,.12) 0%, transparent 60%),
+    radial-gradient(ellipse at 10% 90%, rgba(255,255,255,.03) 0%, transparent 50%);
+  pointer-events: none;
+}
+.h-lines {
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(255,255,255,.018) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,.018) 1px, transparent 1px);
+  background-size: 72px 72px;
+  pointer-events: none;
+}
+/* Vertical social rail — AlbaCars style */
+.h-social-rail {
+  position: absolute;
+  right: 32px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  z-index: 10;
+}
+.h-social-rail::before,
+.h-social-rail::after {
+  content: '';
+  display: block;
+  width: 1px;
+  height: 48px;
+  background: rgba(255,255,255,.18);
+}
+.hsr-link {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: rgba(255,255,255,.07);
+  border: 1px solid rgba(255,255,255,.13);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all var(--tr);
+}
+.hsr-link:hover { background: var(--red); border-color: var(--red); }
+.hsr-link svg { width: 15px; height: 15px; fill: rgba(255,255,255,.75); }
+.hsr-link:hover svg { fill: #fff; }
+
+.hc {
+  position: relative;
+  z-index: 2;
+  padding: 130px 32px 72px;
+  max-width: 1360px;
+  margin: 0 auto;
+  width: 100%;
+}
+.h-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: rgba(211,47,47,.15);
+  border: 1px solid rgba(211,47,47,.32);
+  border-radius: 100px;
+  padding: 6px 18px;
+  margin-bottom: 28px;
+}
+.h-eyebrow-dot {
+  width: 6px;
+  height: 6px;
+  background: var(--red);
+  border-radius: 50%;
+  animation: pulse 2s infinite;
+}
+@keyframes pulse {
+  0%,100% { opacity: 1; transform: scale(1); }
+  50% { opacity: .4; transform: scale(1.6); }
+}
+.h-eyebrow span {
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: rgba(255,255,255,.75);
+}
+.h-title {
+  font-family: var(--fh);
+  font-size: clamp(52px, 8vw, 98px);
+  font-weight: 700;
+  line-height: .96;
+  color: #fff;
+  margin-bottom: 24px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.h-title em { color: var(--red); font-style: normal; }
+.h-title .cursor {
+  display: inline-block;
+  width: 3px;
+  height: clamp(40px,6vw,76px);
+  background: var(--red);
+  vertical-align: middle;
+  margin-left: 4px;
+  animation: blink .75s step-end infinite;
+}
+@keyframes blink { 0%,100% { opacity: 1; } 50% { opacity: 0; } }
+.h-sub {
+  font-size: 15px;
+  font-weight: 300;
+  color: rgba(255,255,255,.6);
+  line-height: 1.8;
+  max-width: 500px;
+  margin-bottom: 40px;
+}
+.h-ctas { display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 56px; }
+
+/* Hero search bar */
+.h-search {
+  background: rgba(255,255,255,.07);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255,255,255,.14);
+  border-radius: var(--r3);
+  padding: 20px 24px;
+  max-width: 860px;
+}
+.h-search-label {
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: rgba(255,255,255,.42);
+  margin-bottom: 14px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.h-search-label svg { width: 13px; height: 13px; fill: rgba(255,255,255,.42); }
+.h-sgrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr auto;
+  gap: 10px;
+  align-items: end;
+}
+.h-sf label {
+  display: block;
+  font-size: 9.5px;
+  font-weight: 600;
+  color: rgba(255,255,255,.45);
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  margin-bottom: 7px;
+}
+.h-sf select, .h-sf input {
+  width: 100%;
+  padding: 11px 14px;
+  border: 1.5px solid rgba(255,255,255,.12);
+  border-radius: var(--r1);
+  font-family: var(--fb);
+  font-size: 13px;
+  font-weight: 500;
+  color: #fff;
+  background: rgba(255,255,255,.08);
+  outline: none;
+  transition: border-color var(--tr);
+  -webkit-appearance: none;
+  appearance: none;
+}
+.h-sf select option { background: var(--navy); color: #fff; }
+.h-sf select:focus, .h-sf input:focus {
+  border-color: var(--red);
+  background: rgba(255,255,255,.12);
+}
+.h-sf input::placeholder { color: rgba(255,255,255,.35); }
+
+/* Hero trust pills */
+.h-trust {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  flex-wrap: wrap;
+  margin-top: 28px;
+}
+.h-ti {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 11.5px;
+  font-weight: 500;
+  color: rgba(255,255,255,.58);
+}
+.h-ti svg { width: 14px; height: 14px; fill: rgba(255,255,255,.4); }
+
+/* ============================
+   STATS BAR
+   ============================ */
+.sbar { background: var(--red); }
+.sbi {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  max-width: 1360px;
+  margin: 0 auto;
+  padding: 0 32px;
+}
+.si {
+  text-align: center;
+  padding: 22px 16px;
+  border-right: 1px solid rgba(255,255,255,.16);
+}
+.si:last-child { border-right: none; }
+.sn {
+  font-family: var(--fh);
+  font-size: 32px;
+  font-weight: 700;
+  color: #fff;
+  line-height: 1;
+  letter-spacing: .5px;
+}
+.sl {
+  font-size: 10px;
+  font-weight: 500;
+  color: rgba(255,255,255,.75);
+  margin-top: 5px;
+  letter-spacing: .5px;
+  text-transform: uppercase;
+}
+
+/* ============================
+   INVENTORY
+   ============================ */
+.inv-hd {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-bottom: 32px;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+.frow {
+  display: grid;
+  grid-template-columns: repeat(4,1fr) auto;
+  gap: 10px;
+  background: var(--steel);
+  border-radius: var(--r2);
+  padding: 16px;
+  margin-bottom: 32px;
+  border: 1px solid var(--steel-3);
+}
+.frow select {
+  padding: 10px 14px;
+  border: 1.5px solid var(--steel-3);
+  border-radius: var(--r1);
+  font-family: var(--fb);
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text-dark);
+  background: #fff;
+  outline: none;
+  cursor: pointer;
+  -webkit-appearance: none;
+  appearance: none;
+  transition: border-color var(--tr);
+}
+.frow select:focus { border-color: var(--navy); }
+
+/* Car grid */
+.cgrid {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 22px;
+}
+.cc {
+  background: #fff;
+  border-radius: var(--r3);
+  overflow: hidden;
+  box-shadow: var(--sh1);
+  border: 1px solid var(--steel-2);
+  transition: all .32s ease;
+}
+.cc:hover { transform: translateY(-6px); box-shadow: var(--sh4); border-color: transparent; }
+.cc-img {
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+  background: var(--steel);
+}
+.cc-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform .55s ease;
+}
+.cc:hover .cc-img img { transform: scale(1.07); }
+.cc-actions {
+  position: absolute;
+  top: 11px;
+  right: 11px;
+  display: flex;
+  gap: 6px;
+}
+.cc-action-btn {
+  width: 33px;
+  height: 33px;
+  background: rgba(255,255,255,.92);
+  backdrop-filter: blur(6px);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+  transition: all var(--tr);
+  box-shadow: 0 2px 8px rgba(0,0,0,.12);
+}
+.cc-action-btn:hover { transform: scale(1.12); }
+.cc-action-btn svg { width: 15px; height: 15px; fill: var(--text-mid); transition: fill var(--tr); }
+.cc-action-btn.liked svg { fill: var(--red); }
+.cc-action-btn.saved svg { fill: var(--navy); }
+.cbdg {
+  position: absolute;
+  top: 11px;
+  left: 11px;
+  font-family: var(--fb);
+  font-size: 9.5px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 4px 11px;
+  border-radius: 100px;
+  color: #fff;
+}
+.cbdg-hot { background: var(--red); }
+.cbdg-new { background: var(--green); }
+.cbdg-lux { background: var(--navy); }
+.ccb { padding: 16px 18px 20px; }
+.cmk {
+  font-size: 9.5px;
+  font-weight: 600;
+  color: var(--text-light);
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  margin-bottom: 4px;
+}
+.cnm {
+  font-family: var(--fh);
+  font-size: 19px;
+  font-weight: 600;
+  color: var(--text-dark);
+  margin-bottom: 10px;
+  line-height: 1.2;
+  letter-spacing: .3px;
+}
+.csps {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 14px;
+}
+.csp {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 11px;
+  color: var(--text-mid);
+  font-weight: 500;
+}
+.csp svg { width: 12px; height: 12px; fill: var(--text-light); }
+.cpr {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 12px;
+  border-top: 1px solid var(--steel);
+}
+.cprice {
+  font-family: var(--fh);
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--navy);
+  letter-spacing: .3px;
+}
+.cmo { font-size: 10px; color: var(--text-light); margin-top: 1px; }
+.cc-cta {
+  font-size: 11.5px;
+  font-weight: 600;
+  color: var(--red);
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  transition: gap var(--tr);
+}
+.cc-cta:hover { gap: 9px; }
+.cc-cta svg { width: 14px; height: 14px; fill: var(--red); }
+.lmw { text-align: center; margin-top: 48px; }
+
+/* ============================
+   INSTITUTIONAL METRICS
+   ============================ */
+.metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 2px;
+}
+.metric-card {
+  background: var(--navy-2);
+  padding: 52px 36px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+.metric-card:first-child { border-radius: var(--r3) 0 0 var(--r3); }
+.metric-card:last-child { border-radius: 0 var(--r3) var(--r3) 0; }
+.metric-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 3px;
+  background: var(--red);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform .5s ease;
+}
+.metric-card:hover::before { transform: scaleX(1); }
+.metric-num {
+  font-family: var(--fh);
+  font-size: clamp(42px, 6vw, 68px);
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: 1px;
+  line-height: 1;
+  margin-bottom: 8px;
+}
+.metric-num span { color: var(--red); }
+.metric-label {
+  font-size: 12px;
+  font-weight: 500;
+  color: rgba(255,255,255,.45);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.metric-icon {
+  width: 48px;
+  height: 48px;
+  background: rgba(255,255,255,.05);
+  border: 1px solid rgba(255,255,255,.08);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+}
+.metric-icon svg { width: 22px; height: 22px; fill: rgba(255,255,255,.4); }
+
+/* ============================
+   IMPORT DARK SECTION
+   ============================ */
+.imp-sec {
+  background: linear-gradient(145deg, #000c1a 0%, #001427 50%, #002040 100%);
+  position: relative;
+  overflow: hidden;
+}
+.imp-bg-shape {
+  position: absolute;
+  right: -80px;
+  top: -80px;
+  width: 55%;
+  height: calc(100% + 160px);
+  background: radial-gradient(ellipse at center, rgba(211,47,47,.06) 0%, transparent 70%);
+  pointer-events: none;
+}
+.imp-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 72px;
+  align-items: center;
+}
+.imp-steps { display: flex; flex-direction: column; gap: 16px; margin-top: 32px; }
+.imp-step { display: flex; align-items: flex-start; gap: 18px; }
+.snum {
+  width: 38px; height: 38px;
+  background: rgba(211,47,47,.14);
+  border: 1.5px solid rgba(211,47,47,.32);
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-family: var(--fh);
+  font-size: 14px; font-weight: 700;
+  color: var(--red);
+  flex-shrink: 0;
+}
+.stxt h4 { font-size: 14px; font-weight: 600; color: #fff; margin-bottom: 3px; }
+.stxt p { font-size: 12px; color: rgba(255,255,255,.48); line-height: 1.55; }
+.imp-cards { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+.icard {
+  background: rgba(255,255,255,.04);
+  border: 1px solid rgba(255,255,255,.08);
+  border-radius: var(--r2);
+  padding: 22px;
+  text-align: center;
+  transition: all var(--tr);
+}
+.icard:hover { background: rgba(255,255,255,.07); border-color: rgba(211,47,47,.28); }
+.icard-icon {
+  width: 44px; height: 44px;
+  background: rgba(211,47,47,.12);
+  border-radius: var(--r1);
+  display: flex; align-items: center; justify-content: center;
+  margin: 0 auto 14px;
+}
+.icard-icon svg { width: 22px; height: 22px; fill: var(--red); }
+.icard h4 { font-family: var(--fh); font-size: 14px; font-weight: 600; color: #fff; margin-bottom: 5px; letter-spacing: .3px; }
+.icard p { font-size: 11px; color: rgba(255,255,255,.42); line-height: 1.5; }
+.ptners { display: flex; gap: 12px; margin-top: 28px; align-items: center; flex-wrap: wrap; }
+.pt {
+  font-family: var(--fh);
+  font-size: 14px; font-weight: 700;
+  padding: 8px 20px;
+  border-radius: var(--r1);
+  letter-spacing: .5px;
+  color: #fff;
+}
+.pt-copart { background: #0066CC; }
+.pt-iaai { background: #C41E3A; }
+
+/* ============================
+   SERVICES
+   ============================ */
+.sgrid { display: grid; grid-template-columns: repeat(3,1fr); gap: 22px; margin-top: 52px; }
+.svc {
+  background: #fff;
+  border-radius: var(--r3);
+  padding: 32px 28px;
+  border: 1px solid var(--steel-2);
+  transition: all var(--tr);
+  position: relative;
+  overflow: hidden;
+}
+.svc::after {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 3px;
+  background: var(--navy);
+  transform: scaleX(0);
+  transition: transform var(--tr);
+  transform-origin: left;
+}
+.svc:hover::after { transform: scaleX(1); }
+.svc:hover { transform: translateY(-5px); box-shadow: var(--sh3); }
+.svc-ic {
+  width: 52px; height: 52px;
+  background: var(--steel);
+  border-radius: var(--r1);
+  display: flex; align-items: center; justify-content: center;
+  margin-bottom: 20px;
+}
+.svc-ic svg { width: 24px; height: 24px; fill: var(--navy); }
+.svc h3 {
+  font-family: var(--fh);
+  font-size: 18px; font-weight: 600;
+  color: var(--text-dark);
+  margin-bottom: 10px;
+  letter-spacing: .3px;
+}
+.svc p { font-size: 13px; color: var(--text-mid); line-height: 1.72; font-weight: 300; }
+
+/* ============================
+   SELL YOUR CAR
+   ============================ */
+.sell-sec { background: linear-gradient(145deg, #000c1a 0%, #001427 100%); }
+.sell-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 72px; align-items: start; }
+.sell-steps { display: grid; grid-template-columns: repeat(3,1fr); gap: 18px; margin-top: 32px; }
+.ss {
+  background: rgba(255,255,255,.04);
+  border: 1px solid rgba(255,255,255,.07);
+  border-radius: var(--r2);
+  padding: 22px 16px;
+  text-align: center;
+}
+.ss-n {
+  font-family: var(--fh);
+  font-size: 36px; font-weight: 700;
+  color: rgba(211,47,47,.35);
+  line-height: 1;
+  margin-bottom: 8px;
+}
+.ss h4 { font-size: 12px; font-weight: 600; color: rgba(255,255,255,.8); margin-bottom: 4px; }
+.ss p { font-size: 11px; color: rgba(255,255,255,.38); }
+.sfbox {
+  background: rgba(255,255,255,.04);
+  border: 1px solid rgba(255,255,255,.09);
+  border-radius: var(--r3);
+  padding: 36px 32px;
+}
+.sfbox h3 {
+  font-family: var(--fh);
+  font-size: 20px; font-weight: 600;
+  color: #fff; margin-bottom: 22px;
+  letter-spacing: .3px;
+}
+.fr { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.fg { margin-bottom: 14px; }
+.fg label {
+  display: block;
+  font-size: 10px; font-weight: 600;
+  color: rgba(255,255,255,.4);
+  text-transform: uppercase; letter-spacing: 1px;
+  margin-bottom: 7px;
+}
+.fg input, .fg select, .fg textarea {
+  width: 100%;
+  padding: 11px 14px;
+  border: 1.5px solid rgba(255,255,255,.1);
+  border-radius: var(--r1);
+  font-family: var(--fb);
+  font-size: 13px; font-weight: 400;
+  color: #fff;
+  background: rgba(255,255,255,.06);
+  outline: none;
+  transition: border-color var(--tr);
+}
+.fg input:focus, .fg select:focus, .fg textarea:focus { border-color: var(--red); }
+.fg input::placeholder, .fg textarea::placeholder { color: rgba(255,255,255,.25); }
+.fg textarea { resize: vertical; min-height: 90px; }
+.fg select option { background: var(--navy); }
+
+/* Light form variant (contact section) */
+.lfg { margin-bottom: 14px; }
+.lfg label {
+  display: block;
+  font-size: 10px; font-weight: 600;
+  color: var(--text-light);
+  text-transform: uppercase; letter-spacing: 1px;
+  margin-bottom: 7px;
+}
+.lfg input, .lfg select, .lfg textarea {
+  width: 100%;
+  padding: 11px 14px;
+  border: 1.5px solid var(--steel-3);
+  border-radius: var(--r1);
+  font-family: var(--fb);
+  font-size: 13px;
+  color: var(--text-dark);
+  background: var(--steel);
+  outline: none;
+  transition: border-color var(--tr);
+}
+.lfg input:focus, .lfg select:focus, .lfg textarea:focus { border-color: var(--navy); background: #fff; }
+.lfg textarea { resize: vertical; min-height: 90px; }
+.lfr { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+
+/* ============================
+   CALCULATOR
+   ============================ */
+.cal-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center; }
+.cal-wrap {
+  background: #fff;
+  border-radius: var(--r4);
+  padding: 40px;
+  box-shadow: var(--sh4);
+  border: 1px solid var(--steel-2);
+}
+.cal-wrap h3 {
+  font-family: var(--fh);
+  font-size: 22px; font-weight: 600;
+  color: var(--text-dark); margin-bottom: 6px;
+  letter-spacing: .3px;
+}
+.cal-wrap > p { font-size: 13px; color: var(--text-mid); margin-bottom: 28px; font-weight: 300; }
+.rg { margin-bottom: 22px; }
+.rg label {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px; font-weight: 600;
+  color: var(--text-dark); margin-bottom: 9px;
+}
+.rg label span { color: var(--red); }
+input[type=range] {
+  width: 100%; height: 3px;
+  background: var(--steel-3);
+  border-radius: 2px;
+  outline: none;
+  -webkit-appearance: none; appearance: none;
+  cursor: pointer;
+}
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 18px; height: 18px;
+  background: var(--navy);
+  border-radius: 50%;
+  box-shadow: 0 2px 6px rgba(0,31,63,.3);
+}
+.cr-box {
+  background: var(--navy);
+  border-radius: var(--r2);
+  padding: 22px;
+  text-align: center;
+  margin-top: 22px;
+}
+.cr-label { font-size: 10px; color: rgba(255,255,255,.5); letter-spacing: 2px; text-transform: uppercase; margin-bottom: 6px; }
+.cr-amt {
+  font-family: var(--fh);
+  font-size: 38px; font-weight: 700;
+  color: #fff; letter-spacing: .5px;
+}
+.cr-sub { font-size: 11px; color: rgba(255,255,255,.4); margin-top: 4px; }
+
+/* ============================
+   ABOUT
+   ============================ */
+.about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 72px; align-items: center; }
+.stat-boxes { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-top: 32px; }
+.sbox {
+  background: var(--steel);
+  border-radius: var(--r2);
+  padding: 22px;
+  border: 1px solid var(--steel-2);
+}
+.sbox-n {
+  font-family: var(--fh);
+  font-size: 32px; font-weight: 700;
+  line-height: 1; margin-bottom: 4px;
+  letter-spacing: .3px;
+}
+.sbox-l { font-size: 11px; color: var(--text-light); font-weight: 500; text-transform: uppercase; letter-spacing: 1px; }
+.vid-frame { border-radius: var(--r3); overflow: hidden; }
+.vid-ph {
+  background: linear-gradient(135deg, var(--navy) 0%, #003366 100%);
+  height: 280px;
+  display: flex; flex-direction: column;
+  align-items: center; justify-content: center;
+  gap: 16px;
+  border-radius: var(--r3);
+}
+.vid-btn {
+  width: 64px; height: 64px;
+  background: var(--red);
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  border: none; cursor: pointer;
+  transition: all var(--tr);
+  box-shadow: 0 4px 18px rgba(211,47,47,.4);
+}
+.vid-btn svg { width: 22px; height: 22px; fill: #fff; margin-left: 3px; }
+.vid-btn:hover { transform: scale(1.1); }
+.vid-ph p { font-size: 12px; color: rgba(255,255,255,.45); text-align: center; letter-spacing: .5px; }
+.copart-badge {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background: var(--steel);
+  border: 1px solid var(--steel-2);
+  border-radius: var(--r2);
+  padding: 18px 22px;
+  margin-top: 16px;
+}
+.copart-badge-icon svg { width: 32px; height: 32px; fill: var(--gold); }
+.copart-badge-text strong { display: block; font-size: 13px; font-weight: 600; color: var(--text-dark); margin-bottom: 2px; }
+.copart-badge-text span { font-size: 11px; color: var(--text-light); font-weight: 300; }
+
+/* ============================
+   GOOGLE REVIEWS (Emulator)
+   ============================ */
+.gr-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 32px;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.gr-business {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+.gr-g-badge {
+  width: 52px; height: 52px;
+  background: #fff;
+  border: 2px solid var(--steel-2);
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  box-shadow: var(--sh1);
+}
+.gr-g-badge svg { width: 28px; height: 28px; }
+.gr-biz-name { font-family: var(--fh); font-size: 18px; font-weight: 600; color: var(--text-dark); letter-spacing: .3px; }
+.gr-biz-sub { font-size: 11px; color: var(--text-light); margin-top: 2px; }
+.gr-score-block { display: flex; align-items: center; gap: 14px; }
+.gr-big-num {
+  font-family: var(--fh);
+  font-size: 52px; font-weight: 700;
+  color: var(--text-dark); line-height: 1;
+  letter-spacing: .5px;
+}
+.gr-stars-row { display: flex; gap: 3px; margin-bottom: 4px; }
+.gr-star svg { width: 18px; height: 18px; fill: var(--gold); }
+.gr-count { font-size: 12px; color: var(--text-light); }
+.tgrid { display: grid; grid-template-columns: repeat(3,1fr); gap: 18px; }
+.rc {
+  background: #fff;
+  border-radius: var(--r2);
+  padding: 22px;
+  border: 1px solid var(--steel-2);
+  box-shadow: var(--sh1);
+  transition: all var(--tr);
+}
+.rc:hover { box-shadow: var(--sh2); transform: translateY(-2px); }
+.rh { display: flex; align-items: center; gap: 12px; margin-bottom: 14px; }
+.rav {
+  width: 38px; height: 38px;
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-family: var(--fh);
+  font-size: 16px; font-weight: 700;
+  color: #fff;
+  flex-shrink: 0;
+}
+.ri { flex: 1; }
+.ri h4 { font-size: 13px; font-weight: 600; color: var(--text-dark); }
+.rm { display: flex; align-items: center; gap: 8px; margin-top: 2px; }
+.stars { color: var(--gold); font-size: 11px; letter-spacing: 1px; }
+.rdate { font-size: 10px; color: var(--text-light); }
+.gb {
+  margin-left: auto;
+  display: flex; align-items: center; justify-content: center;
+}
+.rtxt { font-size: 13px; color: var(--text-mid); line-height: 1.7; font-weight: 300; }
+.rtags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 12px; }
+.rtag {
+  font-size: 10px; font-weight: 600;
+  color: var(--navy);
+  background: var(--steel);
+  border-radius: 100px;
+  padding: 3px 10px;
+}
+.verified-badge {
+  display: inline-flex; align-items: center; gap: 4px;
+  font-size: 9.5px; font-weight: 600;
+  color: var(--green);
+  background: rgba(5,150,105,.08);
+  border-radius: 100px;
+  padding: 2px 8px;
+  margin-top: 4px;
+}
+.verified-badge svg { width: 10px; height: 10px; fill: var(--green); }
+.gr-write-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 22px;
+  background: #1a73e8;
+  color: #fff;
+  border-radius: 100px;
+  font-size: 13px; font-weight: 600;
+  border: none; cursor: pointer;
+  transition: all var(--tr);
+  box-shadow: 0 2px 10px rgba(26,115,232,.3);
+}
+.gr-write-btn:hover { background: #1558b0; transform: translateY(-1px); }
+.gr-write-btn svg { width: 15px; height: 15px; fill: #fff; }
+
+/* ============================
+   FAQ
+   ============================ */
+.faq-list { max-width: 800px; margin: 48px auto 0; }
+.fi {
+  border-bottom: 1px solid var(--steel-2);
+}
+.fq {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--text-dark);
+  gap: 16px;
+  transition: color var(--tr);
+}
+.fq:hover { color: var(--navy); }
+.fic {
+  width: 28px; height: 28px;
+  background: var(--steel);
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 18px;
+  color: var(--text-mid);
+  transition: all var(--tr);
+  flex-shrink: 0;
+}
+.fi.op .fic { background: var(--navy); color: #fff; transform: rotate(45deg); }
+.fi.op .fq { color: var(--navy); }
+.fa {
+  display: none;
+  padding: 0 0 20px;
+  font-size: 14px;
+  color: var(--text-mid);
+  line-height: 1.78;
+  font-weight: 300;
+}
+.fi.op .fa { display: block; }
+
+/* ============================
+   CONTACT
+   ============================ */
+.cg { display: grid; grid-template-columns: 1fr 1.4fr; gap: 56px; }
+.cd {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 18px 0;
+  border-bottom: 1px solid var(--steel-2);
+}
+.cdi {
+  width: 40px; height: 40px;
+  background: var(--navy);
+  border-radius: var(--r1);
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+.cdi svg { width: 18px; height: 18px; fill: rgba(255,255,255,.7); }
+.cd h4 { font-size: 10px; font-weight: 600; color: var(--text-light); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 4px; }
+.cd a, .cd p { font-size: 14px; font-weight: 500; color: var(--text-dark); }
+.cd a:hover { color: var(--red); }
+.opbdg {
+  display: inline-flex; align-items: center; gap: 6px;
+  color: #fff;
+  font-size: 10px; font-weight: 600;
+  padding: 3px 10px; border-radius: 100px;
+  margin-top: 5px; text-transform: uppercase; letter-spacing: .5px;
+}
+.opbdg::before { content: ''; width: 5px; height: 5px; background: #fff; border-radius: 50%; }
+.cf {
+  background: #fff;
+  border: 1px solid var(--steel-2);
+  border-radius: var(--r4);
+  padding: 38px;
+  box-shadow: var(--sh2);
+}
+.cf h3 {
+  font-family: var(--fh);
+  font-size: 20px; font-weight: 600;
+  color: var(--text-dark); margin-bottom: 22px;
+  letter-spacing: .3px;
+}
+.contact-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+.contact-wa-btn, .contact-call-btn {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding: 12px 22px;
+  border-radius: var(--r1);
+  font-size: 13px; font-weight: 600;
+  border: none; cursor: pointer;
+  transition: all var(--tr);
+  flex: 1;
+  justify-content: center;
+}
+.contact-wa-btn { background: #25D366; color: #fff; }
+.contact-wa-btn:hover { background: #1dba58; transform: translateY(-1px); }
+.contact-call-btn { background: var(--navy); color: #fff; }
+.contact-call-btn:hover { background: var(--navy-2); transform: translateY(-1px); }
+.contact-wa-btn svg, .contact-call-btn svg { width: 16px; height: 16px; fill: #fff; }
+
+/* ============================
+   FOOTER
+   ============================ */
+footer { background: #020d1c; color: #fff; }
+.ft { padding: 64px 0 40px; border-bottom: 1px solid rgba(255,255,255,.06); }
+.fg4 { display: grid; grid-template-columns: 2fr 1fr 1fr 1.6fr; gap: 44px; }
+.fbrand-name {
+  font-family: var(--fh);
+  font-size: 22px; font-weight: 700;
+  color: #fff; letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+}
+.fbrand-name em { color: var(--red); font-style: normal; }
+.fbrand p { font-size: 12.5px; color: rgba(255,255,255,.42); line-height: 1.75; margin-bottom: 20px; font-weight: 300; }
+.fsoc { display: flex; gap: 8px; }
+.fsb {
+  width: 36px; height: 36px;
+  border-radius: var(--r1);
+  background: rgba(255,255,255,.06);
+  border: 1px solid rgba(255,255,255,.07);
+  display: flex; align-items: center; justify-content: center;
+  transition: all var(--tr);
+}
+.fsb:hover { background: var(--red); border-color: var(--red); }
+.fsb svg { width: 15px; height: 15px; fill: rgba(255,255,255,.65); }
+.fsb:hover svg { fill: #fff; }
+.fc h4 {
+  font-size: 9.5px; font-weight: 600;
+  text-transform: uppercase; letter-spacing: 2.5px;
+  color: rgba(255,255,255,.28);
+  margin-bottom: 18px;
+}
+.fc li { margin-bottom: 10px; }
+.fc a { font-size: 13px; color: rgba(255,255,255,.52); transition: color var(--tr); }
+.fc a:hover { color: #fff; }
+.fci { display: flex; gap: 12px; align-items: flex-start; margin-bottom: 14px; }
+.fci-ic { flex-shrink: 0; margin-top: 1px; }
+.fci-ic svg { width: 15px; height: 15px; fill: rgba(255,255,255,.35); }
+.fci p, .fci a { font-size: 12px; color: rgba(255,255,255,.48); line-height: 1.55; }
+.fci a:hover { color: rgba(255,255,255,.8); }
+.fpartners {
+  display: flex; gap: 10px; margin-top: 20px;
+}
+.fpt {
+  font-family: var(--fh);
+  font-size: 12px; font-weight: 700;
+  padding: 6px 14px;
+  border-radius: 4px;
+  letter-spacing: .5px;
+  color: #fff;
+}
+.fb {
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.fb p { font-size: 11.5px; color: rgba(255,255,255,.25); }
+.fpbs { display: flex; gap: 10px; }
+.fpb {
+  font-size: 9.5px; font-weight: 700;
+  padding: 4px 12px;
+  border-radius: 4px;
+  border: 1px solid rgba(255,255,255,.12);
+  color: rgba(255,255,255,.35);
+  letter-spacing: .5px;
+}
+
+/* ============================
+   INTEGRATED CONTACT BUTTONS
+   (No floating bubbles — per spec)
+   ============================ */
+.fl-btns {
+  position: fixed;
+  bottom: 28px; right: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 900;
+}
+.fl-btn {
+  width: 52px; height: 52px;
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  box-shadow: 0 4px 18px rgba(0,0,0,.2);
+  transition: all var(--tr);
+  text-decoration: none;
+}
+.fl-btn:hover { transform: scale(1.08) translateY(-2px); }
+.fl-wa { background: #25D366; }
+.fl-ph { background: var(--navy); }
+.fl-btn svg { width: 22px; height: 22px; fill: #fff; }
+
+/* ============================
+   MODAL (Booking)
+   ============================ */
+.mover {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,10,25,.88);
+  z-index: 2000;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  backdrop-filter: blur(4px);
+}
+.mover.op { display: flex; }
+.mod {
+  background: #fff;
+  border-radius: var(--r4);
+  padding: 40px;
+  max-width: 520px;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+  position: relative;
+  animation: modin .28s ease;
+}
+@keyframes modin {
+  from { opacity: 0; transform: scale(.95) translateY(16px); }
+  to { opacity: 1; transform: scale(1) translateY(0); }
+}
+.mcl {
+  position: absolute;
+  top: 16px; right: 16px;
+  width: 32px; height: 32px;
+  background: var(--steel);
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  cursor: pointer;
+  transition: all var(--tr);
+  border: none;
+}
+.mcl svg { width: 16px; height: 16px; fill: var(--text-mid); }
+.mcl:hover { background: var(--steel-3); }
+.mod h2 {
+  font-family: var(--fh);
+  font-size: 24px; font-weight: 700;
+  color: var(--text-dark); margin-bottom: 6px;
+  letter-spacing: .3px;
+}
+.mod > p { font-size: 13px; color: var(--text-mid); margin-bottom: 24px; }
+.btypes { display: grid; grid-template-columns: repeat(3,1fr); gap: 10px; margin-bottom: 24px; }
+.bt {
+  padding: 16px 10px;
+  border: 1.5px solid var(--steel-3);
+  border-radius: var(--r2);
+  text-align: center;
+  cursor: pointer;
+  transition: all var(--tr);
+  background: #fff;
+}
+.bt:hover, .bt.sel { border-color: var(--navy); background: var(--navy); color: #fff; }
+.bt-ic { width: 32px; height: 32px; margin: 0 auto 8px; }
+.bt-ic svg { width: 32px; height: 32px; fill: var(--text-mid); }
+.bt.sel .bt-ic svg, .bt:hover .bt-ic svg { fill: #fff; }
+.bt p { font-size: 11px; font-weight: 600; color: inherit; margin: 0; }
+
+/* ============================
+   TOAST
+   ============================ */
+.toast {
+  position: fixed;
+  bottom: 28px; left: 50%;
+  transform: translateX(-50%) translateY(110px);
+  background: var(--text-dark);
+  color: #fff;
+  padding: 13px 26px;
+  border-radius: var(--r2);
+  font-size: 13px; font-weight: 500;
+  box-shadow: var(--sh4);
+  z-index: 3000;
+  transition: transform .4s ease;
+  display: flex; align-items: center; gap: 10px;
+  white-space: nowrap;
+}
+.toast.show { transform: translateX(-50%) translateY(0); }
+.toast svg { width: 16px; height: 16px; flex-shrink: 0; }
+
+/* ============================
+   SCROLL ANIMATIONS
+   ============================ */
+.fu {
+  opacity: 0;
+  transform: translateY(26px);
+  transition: opacity .6s ease, transform .6s ease;
+}
+.fu.vis { opacity: 1; transform: translateY(0); }
+.fd1 { transition-delay: .1s; }
+.fd2 { transition-delay: .2s; }
+.fd3 { transition-delay: .3s; }
+.fd4 { transition-delay: .4s; }
+
+/* ============================
+   REVIEW MODAL
+   ============================ */
+.review-modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,10,25,.88);
+  z-index: 2000;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  backdrop-filter: blur(4px);
+}
+.review-modal.op { display: flex; }
+.rm-inner {
+  background: #fff;
+  border-radius: var(--r4);
+  padding: 36px;
+  max-width: 480px;
+  width: 100%;
+  position: relative;
+  animation: modin .28s ease;
+}
+.rm-inner h2 {
+  font-family: var(--fh);
+  font-size: 22px; font-weight: 700;
+  color: var(--text-dark); margin-bottom: 5px;
+  letter-spacing: .3px;
+}
+.rm-inner > p { font-size: 13px; color: var(--text-mid); margin-bottom: 22px; }
+.star-select {
+  display: flex; gap: 8px; margin-bottom: 18px;
+}
+.star-select span {
+  font-size: 28px; cursor: pointer;
+  color: var(--steel-3);
+  transition: color var(--tr);
+}
+.star-select span.active { color: var(--gold); }
+
+/* ============================
+   RESPONSIVE
+   ============================ */
+@media(max-width: 1100px) {
+  .cgrid { grid-template-columns: repeat(2,1fr); }
+  .sgrid { grid-template-columns: repeat(2,1fr); }
+  .fg4 { grid-template-columns: 1fr 1fr; }
+  .metrics-grid { grid-template-columns: repeat(3,1fr); }
+}
+@media(max-width: 900px) {
+  .nl, .nact { display: none; }
+  .hbg { display: flex; }
+  .imp-inner, .sell-inner, .about-grid, .cal-grid, .cg { grid-template-columns: 1fr; }
+  .h-sgrid { grid-template-columns: 1fr 1fr; }
+  .tgrid { grid-template-columns: repeat(2,1fr); }
+  .sbi { grid-template-columns: repeat(2,1fr); }
+  .si:nth-child(odd) { border-right: 1px solid rgba(255,255,255,.16); }
+  .si:nth-child(even) { border-right: none; }
+  .si:nth-child(1), .si:nth-child(2) { border-bottom: 1px solid rgba(255,255,255,.16); }
+  .frow { grid-template-columns: 1fr 1fr; }
+  .metrics-grid { grid-template-columns: 1fr; gap: 2px; }
+  .metric-card:first-child { border-radius: var(--r3) var(--r3) 0 0; }
+  .metric-card:last-child { border-radius: 0 0 var(--r3) var(--r3); }
+  .fg4 { grid-template-columns: 1fr; }
+  .h-social-rail { display: none; }
+  .sell-steps { grid-template-columns: 1fr; }
+}
+@media(max-width: 600px) {
+  .sec { padding: 68px 0; }
+  .h-sgrid { grid-template-columns: 1fr; }
+  .h-ctas { flex-direction: column; }
+  .h-ctas .btn { width: 100%; justify-content: center; }
+  .tgrid { grid-template-columns: 1fr; }
+  .btypes { grid-template-columns: 1fr; }
+  .fr, .lfr { grid-template-columns: 1fr; }
+  .sgrid { grid-template-columns: 1fr; }
+  .stat-boxes { grid-template-columns: 1fr 1fr; }
+  .cf, .sfbox, .cal-wrap { padding: 24px 18px; }
+  .mod { padding: 28px 18px; }
+  .contact-actions { flex-direction: column; }
+  .gr-header { flex-direction: column; align-items: flex-start; }
+  .gr-score-block { flex-direction: column; align-items: flex-start; }
 }
 </style>
 </head>
 <body>
 
+<!-- PAGE TRANSITION OVERLAY -->
+<div class="pg-transition" id="pgt"></div>
+
 <!-- NAVBAR -->
 <nav id="nb">
   <div class="ni">
-    <a href="#" class="logo-txt">
-      <div class="logo-icon"><span>VD</span></div>
-      <div class="logo-words">
-        <div class="logo-top">VICDAVIS</div>
-        <div class="logo-bot">AUTO LINK</div>
+    <a href="#" class="n-logo">
+      <div class="logo-svg-wrap">
+        <!-- Logo SVG (car silhouette in oval — mirrors brand logo) -->
+        <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <ellipse cx="22" cy="22" rx="21" ry="21" stroke="#fff" stroke-width="1.5" opacity=".5"/>
+          <ellipse cx="22" cy="22" rx="21" ry="21" stroke="none"/>
+          <!-- Car silhouette -->
+          <path d="M10 26h24M12 26v-2l4-5h12l4 5v2" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="15" cy="27" r="1.8" fill="#fff"/>
+          <circle cx="29" cy="27" r="1.8" fill="#fff"/>
+          <path d="M16.5 21l2.5-4h6l2.5 4" stroke="#fff" stroke-width="1" stroke-linecap="round"/>
+        </svg>
+        <div>
+          <div class="logo-name">VicDavis</div>
+          <div class="logo-sub">Auto Link</div>
+        </div>
       </div>
     </a>
+
     <ul class="nl">
       <li><a href="#inv">Browse Cars</a></li>
       <li><a href="#imp">Import USA</a></li>
       <li><a href="#svcs">Services</a></li>
       <li><a href="#sell">Sell My Car</a></li>
-      <li><a href="#about">About Us</a></li>
+      <li><a href="#about">About</a></li>
       <li><a href="#ct">Contact</a></li>
     </ul>
+
     <div class="nact">
-      <a href="tel:+233545272848" class="nph">📞 +233 545 272 848</a>
-      <button class="btn btn-r btn-sm" onclick="openBook()">Book Consultation</button>
+      <a href="tel:+233545272848" class="n-call">
+        <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.3 1L6.6 10.8z"/></svg>
+        +233 545 272 848
+      </a>
+      <button class="n-sell-btn" onclick="document.getElementById('sell').scrollIntoView({behavior:'smooth'})">Sell Your Car</button>
     </div>
     <button class="hbg" id="hbg" onclick="toggleMnav()"><span></span><span></span><span></span></button>
   </div>
 </nav>
+
+<!-- MOBILE NAV -->
 <div class="mnav" id="mnav">
-  <a href="#inv" onclick="closeMnav()">🚗 Browse Cars</a>
-  <a href="#imp" onclick="closeMnav()">🚢 Import from USA</a>
-  <a href="#svcs" onclick="closeMnav()">🔧 Our Services</a>
-  <a href="#sell" onclick="closeMnav()">💰 Sell My Car</a>
-  <a href="#about" onclick="closeMnav()">🏢 About Us</a>
-  <a href="#ct" onclick="closeMnav()">📍 Contact</a>
+  <a href="#inv" onclick="closeMnav()">Browse Cars</a>
+  <a href="#imp" onclick="closeMnav()">Import from USA</a>
+  <a href="#svcs" onclick="closeMnav()">Our Services</a>
+  <a href="#sell" onclick="closeMnav()">Sell My Car</a>
+  <a href="#about" onclick="closeMnav()">About Us</a>
+  <a href="#ct" onclick="closeMnav()">Contact</a>
   <div class="mnav-btns">
-    <a href="tel:+233545272848" class="btn btn-n btn-full">📞 Call Now</a>
-    <a href="https://wa.me/233577551078" target="_blank" class="btn btn-wa btn-full">💬 WhatsApp</a>
+    <a href="tel:+233545272848" class="btn btn-n btn-full">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="#fff"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.3 1L6.6 10.8z"/></svg>
+      Call Now
+    </a>
+    <a href="https://wa.me/233577551078" target="_blank" class="btn btn-full" style="background:#25D366;color:#fff">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="#fff"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2 22l4.978-1.413A9.953 9.953 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm0 18c-1.685 0-3.257-.48-4.592-1.311l-.332-.197-3.44.977.977-3.361-.217-.35A7.946 7.946 0 014 12c0-4.411 3.589-8 8-8s8 3.589 8 8-3.589 8-8 8z"/></svg>
+      WhatsApp
+    </a>
     <button class="btn btn-r btn-full" onclick="closeMnav();openBook()">Book Consultation</button>
   </div>
 </div>
 
-<!-- HERO -->
+<!-- ======== HERO ======== -->
 <section id="hero">
-  <div class="h-pat"></div>
-  <div class="h-grid"></div>
+  <div class="h-overlay"></div>
+  <div class="h-lines"></div>
+
+  <!-- AlbaCars-style vertical social rail -->
+  <div class="h-social-rail">
+    <a href="https://web.facebook.com/vicdavisautolinkcopart/" target="_blank" class="hsr-link" aria-label="Facebook">
+      <svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+    </a>
+    <a href="https://www.instagram.com/vicdavisautolink_copart/" target="_blank" class="hsr-link" aria-label="Instagram">
+      <svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"/></svg>
+    </a>
+    <a href="https://wa.me/233577551078" target="_blank" class="hsr-link" aria-label="WhatsApp">
+      <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347zM12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2 22l4.978-1.413A9.953 9.953 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2z"/></svg>
+    </a>
+    <a href="mailto:vicdavisautolink2021@gmail.com" class="hsr-link" aria-label="Email">
+      <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+    </a>
+  </div>
+
   <div class="hc">
-    <div class="h-badge">🏆 Ghana's Premier Car Importer Since 2009</div>
-    <h1 class="h-title">Find Your<br><em>Dream Car</em><br>In Ghana</h1>
-    <p class="h-sub">Premium vehicles sourced directly from USA via Copart &amp; IAAI. Your ultimate auto for luxury and comfort — trusted by 500+ satisfied customers across Ghana.</p>
-    <div class="h-ctas">
-      <button class="btn btn-r btn-lg" onclick="document.getElementById('inv').scrollIntoView({behavior:'smooth'})">🚗 Browse Inventory</button>
-      <a href="https://wa.me/233577551078?text=Hello%20VicDavis%20Auto%20Link!%20I%27m%20interested%20in%20importing%20a%20car%20from%20the%20USA.%20Can%20you%20help%20me%3F" target="_blank" class="btn btn-ow btn-lg">🚢 Import a Car</a>
+    <div class="h-eyebrow">
+      <div class="h-eyebrow-dot"></div>
+      <span>Ghana's Premier Car Importer — Since 2009</span>
     </div>
-    <div class="h-srch fu">
-      <p class="h-slbl">🔍 Search Our Inventory</p>
+
+    <h1 class="h-title" id="h-title">
+      <span id="tw-line1">FIND YOUR</span><br>
+      <em><span id="tw-line2">DREAM CAR</span></em><br>
+      <span id="tw-line3">IN GHANA</span><span class="cursor" id="tw-cursor"></span>
+    </h1>
+
+    <p class="h-sub">Premium vehicles sourced directly from USA via Copart &amp; IAAI. Your ultimate auto for luxury and comfort — trusted by 500+ satisfied customers across Ghana.</p>
+
+    <div class="h-ctas">
+      <button class="btn btn-r btn-lg" onclick="smoothTo('inv')">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="#fff"><path d="M5 17H3a2 2 0 01-2-2V5a2 2 0 012-2h11a2 2 0 012 2v3M14 17l2 2 4-4M21 12H11a2 2 0 00-2 2v6a2 2 0 002 2h10a2 2 0 002-2v-6a2 2 0 00-2-2z"/></svg>
+        Browse Inventory
+      </button>
+      <a href="https://wa.me/233577551078?text=Hello%20VicDavis%20Auto%20Link!%20I%27m%20interested%20in%20importing%20a%20car%20from%20the%20USA." target="_blank" class="btn btn-ow btn-lg">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="rgba(255,255,255,.8)"><path d="M21 3L9 15M21 3H15M21 3V9"/><path d="M12 5H5a2 2 0 00-2 2v12a2 2 0 002 2h12a2 2 0 002-2v-7"/></svg>
+        Import a Car
+      </a>
+    </div>
+
+    <!-- Search Bar — 60% opacity as spec requires -->
+    <div class="h-search fu">
+      <div class="h-search-label">
+        <svg viewBox="0 0 24 24"><path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" stroke="rgba(255,255,255,.42)" stroke-width="2" fill="none" stroke-linecap="round"/></svg>
+        Search Inventory
+      </div>
       <div class="h-sgrid">
         <div class="h-sf">
           <label>Make / Brand</label>
@@ -452,7 +1674,8 @@ footer{background:var(--navy-dark);color:#fff}
             <option value="">Any Make</option>
             <option>Toyota</option><option>Mercedes-Benz</option><option>BMW</option>
             <option>Lexus</option><option>Range Rover</option><option>Ford</option>
-            <option>Chevrolet</option><option>Cadillac</option><option>Honda</option>
+            <option>Chevrolet</option><option>Cadillac</option><option>Porsche</option>
+            <option>Lamborghini</option><option>Aston Martin</option>
           </select>
         </div>
         <div class="h-sf">
@@ -463,25 +1686,45 @@ footer{background:var(--navy-dark);color:#fff}
             <option value="40000">Under $40,000</option>
             <option value="80000">Under $80,000</option>
             <option value="150000">Under $150,000</option>
+            <option value="999999">$150,000+</option>
           </select>
         </div>
         <div class="h-sf">
           <label>Body Type</label>
           <select id="ht">
             <option value="">Any Type</option>
-            <option value="SUV">SUV</option><option value="Sedan">Sedan</option>
-            <option value="Truck">Truck</option><option value="Coupe">Coupe</option>
+            <option value="SUV">SUV</option>
+            <option value="Sedan">Sedan</option>
+            <option value="Truck">Truck</option>
+            <option value="Coupe">Coupe</option>
+            <option value="Hypercar">Hypercar</option>
           </select>
         </div>
         <button class="btn btn-r" style="height:44px;align-self:end" onclick="heroSearch()">Search Cars</button>
       </div>
     </div>
+
     <div class="h-trust">
-      <div class="h-ti"><div class="h-ti-ic">✅</div>Certified Imports</div>
-      <div class="h-ti"><div class="h-ti-ic">🛡️</div>Duty Assistance</div>
-      <div class="h-ti"><div class="h-ti-ic">🏦</div>Installment Plans</div>
-      <div class="h-ti"><div class="h-ti-ic">🤝</div>Since 2009</div>
-      <div class="h-ti"><div class="h-ti-ic">🚢</div>Copart &amp; IAAI</div>
+      <div class="h-ti">
+        <svg viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round"/></svg>
+        Certified Imports
+      </div>
+      <div class="h-ti">
+        <svg viewBox="0 0 24 24"><path d="M9 7H6a2 2 0 00-2 2v9a2 2 0 002 2h9a2 2 0 002-2v-3M13 3h8m0 0v8m0-8L11 13" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round"/></svg>
+        Duty Assistance
+      </div>
+      <div class="h-ti">
+        <svg viewBox="0 0 24 24"><rect x="2" y="5" width="20" height="14" rx="2" stroke="currentColor" stroke-width="1.5" fill="none"/><path d="M2 10h20" stroke="currentColor" stroke-width="1.5"/></svg>
+        Installment Plans
+      </div>
+      <div class="h-ti">
+        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" stroke="currentColor" stroke-width="1.5" fill="none"/></svg>
+        15+ Years of Trust
+      </div>
+      <div class="h-ti">
+        <svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z" stroke="currentColor" stroke-width="1.5" fill="none"/><polyline points="9 22 9 12 15 12 15 22" stroke="currentColor" stroke-width="1.5"/></svg>
+        Official Copart Partner
+      </div>
     </div>
   </div>
 </section>
@@ -489,34 +1732,43 @@ footer{background:var(--navy-dark);color:#fff}
 <!-- STATS BAR -->
 <div class="sbar">
   <div class="sbi">
-    <div class="si"><div class="sn" data-count="500">0+</div><div class="sl">Cars Imported</div></div>
+    <div class="si"><div class="sn" data-count="500">500+</div><div class="sl">Cars Imported</div></div>
     <div class="si"><div class="sn">15+</div><div class="sl">Years of Trust</div></div>
     <div class="si"><div class="sn">$8K+</div><div class="sl">Starting Price</div></div>
     <div class="si"><div class="sn">9AM–10PM</div><div class="sl">Open Daily</div></div>
   </div>
 </div>
 
-<!-- INVENTORY -->
-<section class="sec sec-grey" id="inv">
+<!-- ======== INVENTORY — APEX GALLERY ======== -->
+<section class="sec sec-steel" id="inv">
   <div class="container">
     <div class="inv-hd fu">
       <div>
-        <span class="lbl">Our Inventory</span>
+        <span class="lbl">Apex Gallery</span>
         <h2 class="stitle">Browse <em>Available Cars</em></h2>
       </div>
-      <a href="https://wa.me/233577551078?text=Hello%20VicDavis!%20I%20would%20like%20to%20request%20a%20specific%20car%20that%20I%20cannot%20find%20in%20your%20inventory." target="_blank" class="btn btn-on">+ Request a Specific Car</a>
+      <a href="https://wa.me/233577551078?text=Hello%20VicDavis!%20I%20would%20like%20to%20request%20a%20specific%20car%20that%20I%20cannot%20find%20in%20your%20inventory." target="_blank" class="btn btn-on">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+        Request a Specific Car
+      </a>
     </div>
+
+    <!-- Filter bar -->
     <div class="frow fu">
       <select id="fm" onchange="filt()">
         <option value="">All Makes</option>
         <option>Toyota</option><option>Mercedes-Benz</option><option>BMW</option>
         <option>Lexus</option><option>Range Rover</option><option>Ford</option>
-        <option>Chevrolet</option><option>Cadillac</option>
+        <option>Chevrolet</option><option>Cadillac</option><option>Porsche</option>
+        <option>Lamborghini</option><option>Aston Martin</option>
       </select>
       <select id="ftype" onchange="filt()">
         <option value="">All Types</option>
-        <option value="SUV">SUV</option><option value="Sedan">Sedan</option>
-        <option value="Truck">Truck</option><option value="Coupe">Coupe</option>
+        <option value="SUV">SUV</option>
+        <option value="Sedan">Sedan</option>
+        <option value="Truck">Truck</option>
+        <option value="Coupe">Coupe</option>
+        <option value="Hypercar">Hypercar</option>
       </select>
       <select id="fprice" onchange="filt()">
         <option value="">Any Price</option>
@@ -524,137 +1776,211 @@ footer{background:var(--navy-dark);color:#fff}
         <option value="40000">Under $40,000</option>
         <option value="80000">Under $80,000</option>
         <option value="200000">Under $200,000</option>
+        <option value="9999999">$200,000+</option>
       </select>
       <select id="fyear" onchange="filt()">
         <option value="">Any Year</option>
-        <option value="2022">2022+</option>
-        <option value="2020">2020+</option>
-        <option value="2018">2018+</option>
+        <option value="2023">2023+</option>
+        <option value="2021">2021+</option>
+        <option value="2019">2019+</option>
+        <option value="2017">2017+</option>
       </select>
       <button class="btn btn-r" onclick="clearF()">Clear</button>
     </div>
+
     <div class="cgrid" id="cgrid"></div>
     <div class="lmw" id="lmw">
-      <button class="btn btn-on btn-lg" onclick="loadMore()">Load More Cars</button>
+      <button class="btn btn-on btn-lg" onclick="loadMore()">Load More Vehicles</button>
     </div>
   </div>
 </section>
 
-<!-- IMPORT FROM USA (DARK) -->
+<!-- ======== INSTITUTIONAL METRICS ======== -->
+<div class="container" style="padding:0 28px">
+  <div class="metrics-grid fu">
+    <div class="metric-card">
+      <div class="metric-icon">
+        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+      </div>
+      <div class="metric-num">2009</div>
+      <div class="metric-label">Trusted Since</div>
+    </div>
+    <div class="metric-card">
+      <div class="metric-icon">
+        <svg viewBox="0 0 24 24"><path d="M5 17H3a2 2 0 01-2-2V5a2 2 0 012-2h11a2 2 0 012 2v3M14 17l2 2 4-4M21 12H11a2 2 0 00-2 2v6a2 2 0 002 2h10a2 2 0 002-2v-6a2 2 0 00-2-2z"/></svg>
+      </div>
+      <div class="metric-num">500<span>+</span></div>
+      <div class="metric-label">Cars Successfully Imported</div>
+    </div>
+    <div class="metric-card">
+      <div class="metric-icon">
+        <svg viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+      </div>
+      <div class="metric-num"><span>2</span>x</div>
+      <div class="metric-label">Official Copart & IAAI Partner</div>
+    </div>
+  </div>
+</div>
+
+<!-- ======== IMPORT USA (DARK) ======== -->
 <section class="sec imp-sec" id="imp">
+  <div class="imp-bg-shape"></div>
   <div class="container">
     <div class="imp-inner">
       <div class="fu">
         <span class="lbl lbl-lt">USA Imports</span>
-        <h2 class="stitle stitle-wh">Import Your <em>Dream Car</em><br>Directly from the USA</h2>
+        <h2 class="stitle stitle-wh">Import Your <em>Dream Car</em><br>From The USA</h2>
         <p class="ssub ssub-wh">We bid live on Copart and IAAI auctions on your behalf, handle all logistics, shipping, and clearing — delivering your car to you in Ghana. Spend less. Drive more.</p>
         <div class="imp-steps">
-          <div class="imp-step"><div class="snum">01</div><div class="stxt"><h4>You Choose Your Car</h4><p>Browse Copart / IAAI listings or describe the car you want. We'll find it.</p></div></div>
-          <div class="imp-step"><div class="snum">02</div><div class="stxt"><h4>We Bid Live for You</h4><p>Our team bids in real-time USA auto auctions and secures the best possible price.</p></div></div>
-          <div class="imp-step"><div class="snum">03</div><div class="stxt"><h4>Logistics &amp; Shipping</h4><p>We handle all documentation, port procedures, and shipping freight to Ghana.</p></div></div>
-          <div class="imp-step"><div class="snum">04</div><div class="stxt"><h4>Duty &amp; Delivery</h4><p>We assist with duty calculation, customs clearance, and final delivery to you.</p></div></div>
+          <div class="imp-step">
+            <div class="snum">01</div>
+            <div class="stxt"><h4>You Choose Your Car</h4><p>Browse Copart / IAAI listings or describe the car you want. We'll find it.</p></div>
+          </div>
+          <div class="imp-step">
+            <div class="snum">02</div>
+            <div class="stxt"><h4>We Bid Live for You</h4><p>Our agents bid in real-time at USA auction. You get notified instantly on win.</p></div>
+          </div>
+          <div class="imp-step">
+            <div class="snum">03</div>
+            <div class="stxt"><h4>Shipping & Clearing</h4><p>We handle all logistics, port clearance, and duty documentation end-to-end.</p></div>
+          </div>
+          <div class="imp-step">
+            <div class="snum">04</div>
+            <div class="stxt"><h4>Delivered in Ghana</h4><p>Your vehicle arrives at Dansoman or we can arrange delivery across Ghana.</p></div>
+          </div>
         </div>
         <div class="ptners">
-          <span style="font-size:12px;color:rgba(255,255,255,.45)">Official Partners:</span>
-          <div class="pt" style="background:#0056b3">COPART</div>
-          <div class="pt" style="background:#c0392b">IAAI</div>
-        </div>
-        <div style="margin-top:26px">
-          <a href="https://wa.me/233577551078?text=Hello%20VicDavis!%20I%20want%20to%20import%20a%20car%20from%20the%20USA.%20Please%20help%20me%20get%20started." target="_blank" class="btn btn-r btn-lg">🚢 Start My Import</a>
+          <span class="pt pt-copart">COPART</span>
+          <span class="pt pt-iaai">IAAI</span>
+          <span style="font-size:12px;color:rgba(255,255,255,.35);font-weight:500">Official Licensed Partners</span>
         </div>
       </div>
       <div class="fu fd2">
         <div class="imp-cards">
-          <div class="icard"><div class="icard-ic">🏎️</div><h4>Live Bidding</h4><p>Real-time auction on your behalf</p></div>
-          <div class="icard"><div class="icard-ic">🚢</div><h4>Full Logistics</h4><p>End-to-end shipping & transport</p></div>
-          <div class="icard"><div class="icard-ic">📋</div><h4>Clearing Agent</h4><p>Full customs & port clearance</p></div>
-          <div class="icard"><div class="icard-ic">🧾</div><h4>Duty Check</h4><p>Accurate duty calculation upfront</p></div>
+          <div class="icard">
+            <div class="icard-icon">
+              <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <h4>Duty Calculation</h4>
+            <p>Exact duty costs before you commit</p>
+          </div>
+          <div class="icard">
+            <div class="icard-icon">
+              <svg viewBox="0 0 24 24"><path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/></svg>
+            </div>
+            <h4>Door-to-Door</h4>
+            <p>Full shipping & logistics handled</p>
+          </div>
+          <div class="icard">
+            <div class="icard-icon">
+              <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+            </div>
+            <h4>6–10 Weeks</h4>
+            <p>Typical delivery from auction to Accra</p>
+          </div>
+          <div class="icard">
+            <div class="icard-icon">
+              <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
+            </div>
+            <h4>Live Bidding</h4>
+            <p>Real-time auction access on your behalf</p>
+          </div>
         </div>
-        <div class="imp-cta-box">
-          <h3>Spend Less.<br>Drive Your <em>Dream.</em></h3>
-          <p>"Don't just dream it — drive it." — VicDavis Auto Link</p>
-          <button class="btn btn-ow btn-full" onclick="openBook('Import Consultation')">Get Import Consultation</button>
+        <div style="margin-top:22px">
+          <a href="https://wa.me/233577551078?text=Hello%20VicDavis%20Auto%20Link!%20I%27m%20interested%20in%20importing%20a%20car%20from%20USA%20via%20Copart%2FIAAI.%20Can%20you%20help%20me%3F" target="_blank" class="btn btn-r btn-full" style="margin-bottom:10px">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="#fff"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347zM12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2 22l4.978-1.413A9.953 9.953 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2z"/></svg>
+            Start Import via WhatsApp
+          </a>
+          <button class="btn btn-ow btn-full" onclick="openBook('Import Consultation')">Book Import Consultation</button>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- SERVICES -->
+<!-- ======== SERVICES ======== -->
 <section class="sec" id="svcs">
   <div class="container">
-    <div style="text-align:center" class="fu">
+    <div class="fu" style="text-align:center">
       <span class="lbl">What We Do</span>
-      <h2 class="stitle">Full-Service <em>Auto Solutions</em></h2>
-      <p class="ssub" style="margin:12px auto 0;text-align:center">From importation to delivery, we handle every step so you don't have to.</p>
+      <h2 class="stitle">Complete <em>Auto Services</em></h2>
+      <p class="ssub" style="margin:14px auto 0;text-align:center">End-to-end automotive solutions for Ghanaians — from sourcing to delivery.</p>
     </div>
     <div class="sgrid">
-      <div class="svc fu fd1"><div class="svc-ic">🚗</div><h3>Car Sales</h3><p>Browse our curated inventory of premium vehicles sourced directly from USA auctions. All makes, all types, ready for Ghana's roads.</p></div>
-      <div class="svc fu fd2"><div class="svc-ic">🚢</div><h3>Car Importation</h3><p>We import automobiles directly from the USA on your behalf. Tell us what you want and we'll source it, bid on it, ship it, and deliver it.</p></div>
-      <div class="svc fu fd3"><div class="svc-ic">🎯</div><h3>Live Auction Bidding</h3><p>Official Copart and IAAI partner. We bid live in real-time USA auto auctions, securing your vehicle at the best possible competitive price.</p></div>
-      <div class="svc fu fd1"><div class="svc-ic">📦</div><h3>Logistics &amp; Shipping</h3><p>Complete end-to-end logistics — from USA warehouse to Ghana port, we coordinate every stage of your vehicle's journey safely.</p></div>
-      <div class="svc fu fd2"><div class="svc-ic">📋</div><h3>Clearing Agent Services</h3><p>We handle all customs documentation, port procedures, and clearance paperwork so your car arrives without delays or complications.</p></div>
-      <div class="svc fu fd3"><div class="svc-ic">🧾</div><h3>Duty Consultation</h3><p>Know exactly what you'll pay before you buy. We calculate all applicable import duties upfront so there are no surprises at the port.</p></div>
-    </div>
-  </div>
-</section>
-
-<!-- INSTALLMENT CALCULATOR -->
-<section class="sec sec-grey">
-  <div class="container">
-    <div class="cal-grid fu">
-      <div>
-        <span class="lbl">Easy Financing</span>
-        <h2 class="stitle">Drive Now,<br><em>Pay Over Time</em></h2>
-        <p class="ssub">We offer flexible installment plans to make your dream car more accessible. Use our estimator to plan your monthly payments.</p>
-        <div class="fin-pts">
-          <div class="fin-pt"><span style="font-size:20px">✅</span><div><strong>Flexible Plans</strong><span>Customised payment terms to fit your budget and situation</span></div></div>
-          <div class="fin-pt"><span style="font-size:20px">✅</span><div><strong>Simple Qualification</strong><span>Straightforward requirements with fast approvals</span></div></div>
-          <div class="fin-pt"><span style="font-size:20px">✅</span><div><strong>All Vehicles</strong><span>Financing available on every car in our inventory</span></div></div>
+      <div class="svc fu">
+        <div class="svc-ic">
+          <svg viewBox="0 0 24 24"><path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
         </div>
-        <div style="margin-top:26px"><button class="btn btn-r btn-lg" onclick="openBook('Finance Consultation')">Apply for Financing</button></div>
+        <h3>Car Importation</h3>
+        <p>We source and import premium vehicles directly from USA via Copart and IAAI auction platforms — handling everything from bidding to delivery in Ghana.</p>
       </div>
-      <div class="cal-wrap">
-        <h3>Payment Estimator</h3>
-        <p>Rough monthly estimate — contact us for exact terms.</p>
-        <div class="rg">
-          <label>Vehicle Price <span id="pd">$25,000</span></label>
-          <input type="range" id="cp" min="8000" max="200000" step="1000" value="25000" oninput="updCalc()">
+      <div class="svc fu fd1">
+        <div class="svc-ic">
+          <svg viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
         </div>
-        <div class="rg">
-          <label>Down Payment <span id="dd">$5,000</span></label>
-          <input type="range" id="cd" min="0" max="50000" step="500" value="5000" oninput="updCalc()">
+        <h3>Clearing Agent Services</h3>
+        <p>Full port clearance management. We calculate exact import duties upfront so you know total costs before committing — no surprises at the port.</p>
+      </div>
+      <div class="svc fu fd2">
+        <div class="svc-ic">
+          <svg viewBox="0 0 24 24"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>
         </div>
-        <div class="rg">
-          <label>Repayment Period <span id="td">24 months</span></label>
-          <input type="range" id="ct" min="6" max="48" step="6" value="24" oninput="updCalc()">
+        <h3>Installment Plans</h3>
+        <p>Flexible payment plans tailored to your budget. Buy premium vehicles without paying the full amount upfront. Terms structured to suit your financial situation.</p>
+      </div>
+      <div class="svc fu fd1">
+        <div class="svc-ic">
+          <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
         </div>
-        <div class="cal-res">
-          <p>Estimated Monthly Payment</p>
-          <div class="cal-mo">$<span id="cr">833</span></div>
-          <div class="cal-note">*Estimate only. Actual terms vary. Contact us for details.</div>
+        <h3>Live Auction Bidding</h3>
+        <p>Real-time bidding on Copart and IAAI on your behalf. Our agents monitor your target vehicles and secure the best possible price at auction.</p>
+      </div>
+      <div class="svc fu fd2">
+        <div class="svc-ic">
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 015.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
         </div>
+        <h3>Car Duty Checking</h3>
+        <p>Accurate duty calculation before purchase. We provide transparent cost breakdowns including all applicable Ghana import taxes and port fees.</p>
+      </div>
+      <div class="svc fu fd3">
+        <div class="svc-ic">
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M12 2a10 10 0 100 20 10 10 0 000-20zM12 6a6 6 0 110 12A6 6 0 0112 6z" opacity=".3"/><circle cx="12" cy="12" r="8" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>
+        </div>
+        <h3>Tyres & Spare Parts</h3>
+        <p>Dealer in quality car tyres and spare parts. Genuine and aftermarket options available for all major vehicle makes and models.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- SELL MY CAR -->
+<!-- ======== SELL YOUR CAR ======== -->
 <section class="sec sell-sec" id="sell">
   <div class="container">
     <div class="sell-inner">
       <div class="fu">
-        <span class="lbl lbl-lt">We Buy Cars</span>
-        <h2 class="stitle stitle-wh">Sell Your Car<br><em>Fast &amp; Hassle-Free</em></h2>
-        <p class="ssub ssub-wh">Get a fair market price for your vehicle. Our team assesses your car and makes you a competitive cash offer — quickly and transparently.</p>
+        <span class="lbl lbl-lt">Sell Your Car</span>
+        <h2 class="stitle stitle-wh">Get Paid Fast<br><em>Hassle-Free</em> Sale</h2>
+        <p class="ssub ssub-wh">Get a fair market value for your vehicle. Our team assesses your car and makes you a competitive cash offer — quickly and transparently.</p>
         <div class="sell-steps">
-          <div class="ss"><div class="ss-n">01</div><h4>Submit Details</h4><p>Fill in your car info</p></div>
-          <div class="ss"><div class="ss-n">02</div><h4>Get a Quote</h4><p>We assess &amp; offer</p></div>
-          <div class="ss"><div class="ss-n">03</div><h4>Get Paid Fast</h4><p>Quick cash payment</p></div>
+          <div class="ss">
+            <div class="ss-n">01</div>
+            <h4>Submit Details</h4>
+            <p>Fill your car info in the form</p>
+          </div>
+          <div class="ss">
+            <div class="ss-n">02</div>
+            <h4>Get a Quote</h4>
+            <p>We assess and make an offer</p>
+          </div>
+          <div class="ss">
+            <div class="ss-n">03</div>
+            <h4>Get Paid Fast</h4>
+            <p>Quick, secure cash payment</p>
+          </div>
         </div>
       </div>
       <div class="sfbox fu fd2">
-        <h3>📋 Get a Quote for Your Car</h3>
+        <h3>Request a Car Valuation</h3>
         <div class="fr">
           <div class="fg"><label>Car Make</label><input type="text" id="smk" placeholder="e.g. Toyota"></div>
           <div class="fg"><label>Model</label><input type="text" id="smo" placeholder="e.g. Camry"></div>
@@ -665,65 +1991,149 @@ footer{background:var(--navy-dark);color:#fff}
         </div>
         <div class="fg"><label>Your Name</label><input type="text" id="snm" placeholder="Full name"></div>
         <div class="fg"><label>Phone / WhatsApp</label><input type="tel" id="sph" placeholder="+233 XXX XXX XXX"></div>
-        <div style="display:flex;gap:10px;margin-top:16px;flex-wrap:wrap">
+        <div style="display:flex;gap:10px;margin-top:18px;flex-wrap:wrap">
           <button class="btn btn-r" style="flex:1" onclick="submitSell()">Get My Quote</button>
-          <a href="https://wa.me/233577551078?text=Hello%20VicDavis!%20I%20want%20to%20sell%20my%20car.%20Please%20contact%20me." target="_blank" class="btn btn-wa" style="flex:1">💬 WhatsApp Quote</a>
+          <a href="https://wa.me/233577551078?text=Hello%20VicDavis!%20I%20want%20to%20sell%20my%20car.%20Please%20contact%20me." target="_blank" class="btn btn-full" style="flex:1;background:#25D366;color:#fff;justify-content:center;border-radius:var(--r1);font-weight:600;font-size:13px;display:inline-flex;align-items:center;gap:9px">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="#fff"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347zM12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2 22l4.978-1.413A9.953 9.953 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2z"/></svg>
+            WhatsApp Quote
+          </a>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ABOUT -->
+<!-- ======== CALCULATOR ======== -->
+<section class="sec sec-steel">
+  <div class="container">
+    <div class="cal-grid">
+      <div class="fu">
+        <span class="lbl">Finance Estimator</span>
+        <h2 class="stitle">Calculate Your <em>Installment</em></h2>
+        <p class="ssub">Use our estimator to get a rough idea of monthly payments. Contact us to structure a plan that works for your exact situation.</p>
+        <div style="margin-top:32px;display:flex;flex-direction:column;gap:14px">
+          <div style="display:flex;align-items:center;gap:12px">
+            <div style="width:8px;height:8px;background:var(--red);border-radius:50%;flex-shrink:0"></div>
+            <span style="font-size:13px;color:var(--text-mid);font-weight:300">Flexible terms: 6 to 36 months</span>
+          </div>
+          <div style="display:flex;align-items:center;gap:12px">
+            <div style="width:8px;height:8px;background:var(--red);border-radius:50%;flex-shrink:0"></div>
+            <span style="font-size:13px;color:var(--text-mid);font-weight:300">Minimum deposit negotiable</span>
+          </div>
+          <div style="display:flex;align-items:center;gap:12px">
+            <div style="width:8px;height:8px;background:var(--red);border-radius:50%;flex-shrink:0"></div>
+            <span style="font-size:13px;color:var(--text-mid);font-weight:300">Available on all vehicles in inventory</span>
+          </div>
+          <div style="display:flex;align-items:center;gap:12px">
+            <div style="width:8px;height:8px;background:var(--red);border-radius:50%;flex-shrink:0"></div>
+            <span style="font-size:13px;color:var(--text-mid);font-weight:300">No hidden charges — full transparency</span>
+          </div>
+        </div>
+      </div>
+      <div class="cal-wrap fu fd2">
+        <h3>Payment Estimator</h3>
+        <p>Estimate your monthly payment based on vehicle price and deposit.</p>
+        <div class="rg">
+          <label>Vehicle Price <span id="cvp">$40,000</span></label>
+          <input type="range" id="vp" min="5000" max="200000" step="1000" value="40000" oninput="calcR()">
+        </div>
+        <div class="rg">
+          <label>Down Payment <span id="cdp">$8,000</span></label>
+          <input type="range" id="dp" min="0" max="50000" step="500" value="8000" oninput="calcR()">
+        </div>
+        <div class="rg">
+          <label>Term (Months) <span id="ctm">24</span></label>
+          <input type="range" id="tm" min="6" max="36" step="6" value="24" oninput="calcR()">
+        </div>
+        <div class="cr-box">
+          <div class="cr-label">Estimated Monthly Payment</div>
+          <div class="cr-amt">$<span id="cr">1,333</span></div>
+          <div class="cr-sub">Estimate only — contact us for exact terms</div>
+        </div>
+        <button class="btn btn-n btn-full" style="margin-top:14px" onclick="openBook('Import Consultation')">Discuss My Finance Plan</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======== ABOUT ======== -->
 <section class="sec" id="about">
   <div class="container">
     <div class="about-grid">
       <div class="fu">
         <span class="lbl">Our Story</span>
         <h2 class="stitle">Ghana's Trusted <em>Auto Link</em><br>Since 2009</h2>
-        <p class="ssub">VicDavis Auto Link was founded with a single mission: to give Ghanaians access to premium quality vehicles at fair prices. As official partners of Copart and IAAI — America's largest auto auction platforms — we bring the USA car market directly to your doorstep in Accra.</p>
-        <p class="ssub" style="margin-top:12px">From our base opposite Dansoman Police Station, we have imported over 500 vehicles, built lasting relationships with thousands of Ghanaian families, and earned our reputation as the most trusted auto import link in the country.</p>
+        <p class="ssub">VicDavis Auto Link was founded with a single mission: give Ghanaians access to premium quality vehicles at fair prices. As official partners of Copart and IAAI — America's largest auto auction platforms — we bring the USA car market directly to your doorstep in Accra.</p>
+        <p class="ssub" style="margin-top:10px">From our base opposite Dansoman Police Station, we have imported over 500 vehicles, built lasting relationships with thousands of Ghanaian families, and earned our reputation as the most trusted auto import link in the country.</p>
         <div class="stat-boxes">
           <div class="sbox"><div class="sbox-n" style="color:var(--navy)">500+</div><div class="sbox-l">Cars Imported</div></div>
           <div class="sbox"><div class="sbox-n" style="color:var(--navy)">15+</div><div class="sbox-l">Years of Trust</div></div>
           <div class="sbox"><div class="sbox-n" style="color:var(--red)">2</div><div class="sbox-l">USA Auction Partners</div></div>
-          <div class="sbox"><div class="sbox-n" style="color:var(--red)">★★★★★</div><div class="sbox-l">Customer Satisfaction</div></div>
+          <div class="sbox"><div class="sbox-n" style="color:var(--red)">4.9</div><div class="sbox-l">Google Review Score</div></div>
         </div>
       </div>
       <div class="fu fd2">
         <div class="vid-frame">
           <div class="vid-ph">
-            <button class="vid-btn" onclick="alert('Upload your videos to YouTube, then replace this section with an embedded YouTube iframe.')">▶</button>
+            <button class="vid-btn" onclick="alert('Upload your company video to YouTube and replace this with your embed link.')">
+              <svg viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+            </button>
             <p>Watch Our Story — VicDavis Auto Link</p>
           </div>
         </div>
         <div class="copart-badge">
-          <span style="font-size:30px">🏆</span>
-          <div><strong>Official Copart &amp; IAAI Partner</strong><span>Authorised to bid on your behalf at USA's largest auto auctions</span></div>
+          <div class="copart-badge-icon">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" stroke="currentColor" stroke-width="1.5" fill="rgba(245,158,11,.15)"/></svg>
+          </div>
+          <div class="copart-badge-text">
+            <strong>Official Copart &amp; IAAI Partner</strong>
+            <span>Authorised to bid on your behalf at USA's largest auto auctions</span>
+          </div>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- TESTIMONIALS -->
-<section class="sec sec-grey">
+<!-- ======== GOOGLE REVIEW EMULATOR ======== -->
+<section class="sec sec-steel">
   <div class="container">
-    <div style="text-align:center" class="fu">
-      <span class="lbl">Customer Reviews</span>
-      <h2 class="stitle">What Our <em>Customers Say</em></h2>
-      <div style="display:flex;align-items:center;justify-content:center;gap:10px;margin-top:12px;flex-wrap:wrap">
-        <img src="https://www.google.com/favicon.ico" style="width:18px;height:18px" alt="G">
-        <span style="font-family:var(--fd);font-size:28px;font-weight:800;color:var(--td)">4.9</span>
-        <div style="color:var(--gold);font-size:18px;letter-spacing:2px">★★★★★</div>
-        <span style="font-size:12px;color:var(--tl)">Based on 80+ reviews</span>
+    <div class="gr-header fu">
+      <div class="gr-business">
+        <div class="gr-g-badge">
+          <!-- Google G logo -->
+          <svg viewBox="0 0 24 24" width="28" height="28"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+        </div>
+        <div>
+          <div class="gr-biz-name">VicDavis Auto Link</div>
+          <div class="gr-biz-sub">Opposite Dansoman Police Station, Accra, Ghana</div>
+        </div>
+      </div>
+      <div style="display:flex;align-items:center;gap:28px;flex-wrap:wrap">
+        <div class="gr-score-block">
+          <div class="gr-big-num">4.9</div>
+          <div>
+            <div class="gr-stars-row">
+              <div class="gr-star"><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></div>
+              <div class="gr-star"><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></div>
+              <div class="gr-star"><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></div>
+              <div class="gr-star"><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></div>
+              <div class="gr-star"><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></div>
+            </div>
+            <div class="gr-count">Based on 80+ Google Reviews</div>
+          </div>
+        </div>
+        <button class="gr-write-btn" onclick="openReviewModal()">
+          <svg viewBox="0 0 24 24"><path d="M11 4H4a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 013 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>
+          Write a Review
+        </button>
       </div>
     </div>
     <div class="tgrid" id="tgrid"></div>
   </div>
 </section>
 
-<!-- FAQ -->
+<!-- ======== FAQ ======== -->
 <section class="sec">
   <div class="container">
     <div style="text-align:center" class="fu">
@@ -734,37 +2144,62 @@ footer{background:var(--navy-dark);color:#fff}
   </div>
 </section>
 
-<!-- CONTACT -->
-<section class="sec sec-grey" id="ct">
+<!-- ======== CONTACT ======== -->
+<section class="sec sec-steel" id="ct">
   <div class="container">
-    <div class="fu" style="margin-bottom:36px">
+    <div class="fu" style="margin-bottom:40px">
       <span class="lbl">Find Us</span>
       <h2 class="stitle">Get In <em>Touch</em></h2>
     </div>
     <div class="cg">
       <div class="fu">
-        <div class="cd"><div class="cdi">📍</div><div><h4>Address</h4><p>Opposite Dansoman Police Station,<br>Accra, Ghana</p></div></div>
-        <div class="cd"><div class="cdi">📞</div><div><h4>Phone</h4><a href="tel:+233545272848">+233 545 272 848</a><br><a href="tel:+233504974243" style="font-size:13px">+233 504 974 243</a></div></div>
-        <div class="cd"><div class="cdi">💬</div><div><h4>WhatsApp</h4><a href="https://wa.me/233577551078" target="_blank">+233 577 551 078</a></div></div>
-        <div class="cd"><div class="cdi">📧</div><div><h4>Email</h4><a href="mailto:vicdavisautolink2021@gmail.com">vicdavisautolink2021@gmail.com</a></div></div>
         <div class="cd">
-          <div class="cdi">🕒</div>
+          <div class="cdi"><svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+          <div><h4>Address</h4><p>Opposite Dansoman Police Station,<br>Accra, Ghana</p></div>
+        </div>
+        <div class="cd">
+          <div class="cdi"><svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 014.69 12 19.79 19.79 0 011.61 3.48 2 2 0 013.6 1.28h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 8.91a16 16 0 006 6l.77-.77a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg></div>
+          <div>
+            <h4>Phone</h4>
+            <a href="tel:+233545272848">+233 545 272 848</a><br>
+            <a href="tel:+233504974243" style="font-size:13px;margin-top:3px;display:block">+233 504 974 243</a>
+          </div>
+        </div>
+        <div class="cd">
+          <div class="cdi">
+            <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347zM12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2 22l4.978-1.413A9.953 9.953 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2z"/></svg>
+          </div>
+          <div><h4>WhatsApp</h4><a href="https://wa.me/233577551078" target="_blank">+233 577 551 078</a></div>
+        </div>
+        <div class="cd">
+          <div class="cdi"><svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
+          <div><h4>Email</h4><a href="mailto:vicdavisautolink2021@gmail.com">vicdavisautolink2021@gmail.com</a></div>
+        </div>
+        <div class="cd" style="border-bottom:none">
+          <div class="cdi"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
           <div>
             <h4>Opening Hours</h4>
             <p>9:00 AM – 10:00 PM, Daily</p>
             <div class="opbdg" id="opbdg" style="background:var(--green)">Checking...</div>
           </div>
         </div>
-        <div style="margin-top:20px">
-          <div style="font-size:10px;font-weight:700;color:var(--tl);text-transform:uppercase;letter-spacing:1px;margin-bottom:12px">Follow Us</div>
-          <div style="display:flex;gap:10px;flex-wrap:wrap">
-            <a href="https://web.facebook.com/vicdavisautolinkcopart/" target="_blank" class="btn btn-on btn-sm">📘 Facebook</a>
-            <a href="https://www.instagram.com/vicdavisautolink_copart/" target="_blank" class="btn btn-on btn-sm">📸 Instagram</a>
+        <div style="margin-top:24px">
+          <div style="font-size:9.5px;font-weight:600;color:var(--text-light);text-transform:uppercase;letter-spacing:1.5px;margin-bottom:14px">Follow Us</div>
+          <div style="display:flex;gap:9px;flex-wrap:wrap">
+            <a href="https://web.facebook.com/vicdavisautolinkcopart/" target="_blank" class="btn btn-on btn-sm" style="display:inline-flex;align-items:center;gap:7px">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+              Facebook
+            </a>
+            <a href="https://www.instagram.com/vicdavisautolink_copart/" target="_blank" class="btn btn-on btn-sm" style="display:inline-flex;align-items:center;gap:7px">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"/></svg>
+              Instagram
+            </a>
           </div>
         </div>
       </div>
+
       <div class="cf fu fd2">
-        <h3>📬 Send Us a Message</h3>
+        <h3>Send a Message</h3>
         <div class="lfr">
           <div class="lfg"><label>Your Name</label><input type="text" id="ctnm" placeholder="Full name"></div>
           <div class="lfg"><label>Phone / WhatsApp</label><input type="tel" id="ctph" placeholder="+233 ..."></div>
@@ -781,28 +2216,47 @@ footer{background:var(--navy-dark);color:#fff}
           </select>
         </div>
         <div class="lfg"><label>Message</label><textarea id="ctmg" placeholder="Tell us how we can help you..."></textarea></div>
-        <div style="display:flex;gap:10px;flex-wrap:wrap">
+        <div class="contact-actions">
           <button class="btn btn-r" style="flex:1" onclick="submitContact()">Send Message</button>
-          <a href="https://wa.me/233577551078" target="_blank" class="btn btn-wa" style="flex:1">💬 WhatsApp Instead</a>
+          <a href="https://wa.me/233577551078" target="_blank" class="contact-wa-btn">
+            <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347zM12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2 22l4.978-1.413A9.953 9.953 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2z"/></svg>
+            WhatsApp
+          </a>
+          <a href="tel:+233545272848" class="contact-call-btn">
+            <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 014.69 12 19.79 19.79 0 011.61 3.48 2 2 0 013.6 1.28h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 8.91a16 16 0 006 6l.77-.77a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+            Call Now
+          </a>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- FOOTER -->
+<!-- ======== FOOTER ======== -->
 <footer>
   <div class="ft">
     <div class="container">
       <div class="fg4">
         <div class="fbrand">
-          <div style="font-family:var(--fd);font-size:26px;font-weight:900;color:#fff;letter-spacing:-.3px">VICDAVIS <span style="color:var(--red)">AUTO LINK</span></div>
-          <p>Your Ultimate Auto For Your Luxury and Comfort. Ghana's most trusted car dealership and USA importer since 2009. Official Copart &amp; IAAI Partner.</p>
+          <div class="fbrand-name">VicDavis <em>Auto Link</em></div>
+          <p>Your Ultimate Auto For Your Luxury and Comfort. Ghana's most trusted car dealership and USA importer since 2009. Official Copart &amp; IAAI Partner. Opposite Dansoman Police Station, Accra.</p>
           <div class="fsoc">
-            <a href="https://web.facebook.com/vicdavisautolinkcopart/" target="_blank" class="fsb">📘</a>
-            <a href="https://www.instagram.com/vicdavisautolink_copart/" target="_blank" class="fsb">📸</a>
-            <a href="https://wa.me/233577551078" target="_blank" class="fsb">💬</a>
-            <a href="mailto:vicdavisautolink2021@gmail.com" class="fsb">📧</a>
+            <a href="https://web.facebook.com/vicdavisautolinkcopart/" target="_blank" class="fsb" aria-label="Facebook">
+              <svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+            </a>
+            <a href="https://www.instagram.com/vicdavisautolink_copart/" target="_blank" class="fsb" aria-label="Instagram">
+              <svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"/></svg>
+            </a>
+            <a href="https://wa.me/233577551078" target="_blank" class="fsb" aria-label="WhatsApp">
+              <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347zM12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2 22l4.978-1.413A9.953 9.953 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2z"/></svg>
+            </a>
+            <a href="mailto:vicdavisautolink2021@gmail.com" class="fsb" aria-label="Email">
+              <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </a>
+          </div>
+          <div class="fpartners" style="margin-top:16px">
+            <span class="fpt" style="background:#0066CC">COPART</span>
+            <span class="fpt" style="background:#C41E3A">IAAI</span>
           </div>
         </div>
         <div class="fc">
@@ -830,39 +2284,68 @@ footer{background:var(--navy-dark);color:#fff}
         </div>
         <div class="fc">
           <h4>Contact</h4>
-          <div class="fci"><span class="fci-ic">📍</span><p>Opp. Dansoman Police Station,<br>Accra, Ghana</p></div>
-          <div class="fci"><span class="fci-ic">📞</span><p><a href="tel:+233545272848">+233 545 272 848</a></p></div>
-          <div class="fci"><span class="fci-ic">📞</span><p><a href="tel:+233504974243">+233 504 974 243</a></p></div>
-          <div class="fci"><span class="fci-ic">💬</span><p><a href="https://wa.me/233577551078">+233 577 551 078</a> (WhatsApp)</p></div>
-          <div class="fci"><span class="fci-ic">🕒</span><p>9:00 AM – 10:00 PM, Daily</p></div>
+          <div class="fci">
+            <div class="fci-ic"><svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+            <p>Opposite Dansoman Police Station,<br>Accra, Ghana</p>
+          </div>
+          <div class="fci">
+            <div class="fci-ic"><svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 014.69 12 19.79 19.79 0 011.61 3.48 2 2 0 013.6 1.28h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 8.91a16 16 0 006 6l.77-.77a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg></div>
+            <p><a href="tel:+233545272848">+233 545 272 848</a><br><a href="tel:+233504974243">+233 504 974 243</a></p>
+          </div>
+          <div class="fci">
+            <div class="fci-ic"><svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347zM12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2 22l4.978-1.413A9.953 9.953 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2z"/></svg></div>
+            <p><a href="https://wa.me/233577551078" target="_blank">+233 577 551 078</a> (WhatsApp)</p>
+          </div>
+          <div class="fci">
+            <div class="fci-ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
+            <p>9:00 AM – 10:00 PM, Daily</p>
+          </div>
         </div>
       </div>
     </div>
   </div>
   <div class="container">
     <div class="fb">
-      <p>© <span id="fyr"></span> VicDavis Auto Link. All rights reserved. | Accra, Ghana</p>
-      <div class="fpbs"><span class="fpb">COPART PARTNER</span><span class="fpb">IAAI PARTNER</span></div>
+      <p>© <span id="fyr"></span> VicDavis Auto Link. All rights reserved. Accra, Ghana.</p>
+      <div class="fpbs">
+        <span class="fpb">COPART PARTNER</span>
+        <span class="fpb">IAAI PARTNER</span>
+      </div>
     </div>
   </div>
 </footer>
 
-<!-- FLOATING BTNS -->
+<!-- FLOATING CONTACT BUTTONS — Integrated SVG only, no emoji -->
 <div class="fl-btns">
-  <a href="https://wa.me/233577551078?text=Hello%20VicDavis%20Auto%20Link!%20I%27d%20like%20to%20know%20more%20about%20your%20cars." target="_blank" class="fl-btn fl-wa" title="WhatsApp Us">💬</a>
-  <a href="tel:+233545272848" class="fl-btn fl-ph" title="Call Us">📞</a>
+  <a href="https://wa.me/233577551078?text=Hello%20VicDavis%20Auto%20Link!%20I%27d%20like%20to%20know%20more%20about%20your%20cars." target="_blank" class="fl-btn fl-wa" title="WhatsApp Us" aria-label="WhatsApp">
+    <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347zM12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2 22l4.978-1.413A9.953 9.953 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2z"/></svg>
+  </a>
+  <a href="tel:+233545272848" class="fl-btn fl-ph" title="Call Us" aria-label="Call Us">
+    <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 014.69 12 19.79 19.79 0 011.61 3.48 2 2 0 013.6 1.28h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 8.91a16 16 0 006 6l.77-.77a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+  </a>
 </div>
 
 <!-- BOOKING MODAL -->
 <div class="mover" id="bmod" onclick="ovClick(event)">
   <div class="mod">
-    <button class="mcl" onclick="closeBook()">×</button>
+    <button class="mcl" onclick="closeBook()">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
     <h2>Book a Consultation</h2>
     <p>Choose your consultation type and we'll reach out to confirm.</p>
     <div class="btypes" id="btypes">
-      <div class="bt" onclick="selBT(this,'Test Drive')"><div class="bt-ic">🚗</div><p>Test Drive</p></div>
-      <div class="bt" onclick="selBT(this,'Import Consultation')"><div class="bt-ic">🚢</div><p>Import Consultation</p></div>
-      <div class="bt" onclick="selBT(this,'Car Valuation')"><div class="bt-ic">💰</div><p>Car Valuation</p></div>
+      <div class="bt" onclick="selBT(this,'Test Drive')">
+        <div class="bt-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg></div>
+        <p>Test Drive</p>
+      </div>
+      <div class="bt" onclick="selBT(this,'Import Consultation')">
+        <div class="bt-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 3L9 15M21 3H15M21 3V9"/><path d="M12 5H5a2 2 0 00-2 2v12a2 2 0 002 2h12a2 2 0 002-2v-7"/></svg></div>
+        <p>Import Consultation</p>
+      </div>
+      <div class="bt" onclick="selBT(this,'Car Valuation')">
+        <div class="bt-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg></div>
+        <p>Car Valuation</p>
+      </div>
     </div>
     <div class="lfr">
       <div class="lfg"><label>Full Name</label><input type="text" id="bnm" placeholder="Your name"></div>
@@ -870,7 +2353,31 @@ footer{background:var(--navy-dark);color:#fff}
     </div>
     <div class="lfg"><label>Preferred Date</label><input type="date" id="bdt"></div>
     <div class="lfg"><label>Notes (optional)</label><input type="text" id="bnt" placeholder="Car interested in, questions, etc."></div>
-    <button class="btn btn-r btn-full" style="margin-top:8px" onclick="submitBook()">✅ Confirm via WhatsApp</button>
+    <button class="btn btn-r btn-full" style="margin-top:10px" onclick="submitBook()">Confirm via WhatsApp</button>
+  </div>
+</div>
+
+<!-- REVIEW MODAL -->
+<div class="review-modal" id="revModal" onclick="revOverClick(event)">
+  <div class="rm-inner">
+    <button class="mcl" onclick="closeReviewModal()">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+    <h2>Write a Review</h2>
+    <p>Share your experience with VicDavis Auto Link</p>
+    <div class="star-select" id="starSel">
+      <span onclick="setStar(1)" data-star="1">&#9733;</span>
+      <span onclick="setStar(2)" data-star="2">&#9733;</span>
+      <span onclick="setStar(3)" data-star="3">&#9733;</span>
+      <span onclick="setStar(4)" data-star="4">&#9733;</span>
+      <span onclick="setStar(5)" data-star="5">&#9733;</span>
+    </div>
+    <div class="lfg"><label>Your Name</label><input type="text" id="rvnm" placeholder="Full name"></div>
+    <div class="lfg"><label>Your Review</label><textarea id="rvtxt" placeholder="Tell others about your experience..." style="min-height:100px"></textarea></div>
+    <div style="display:flex;gap:10px;margin-top:6px">
+      <button class="btn btn-r" style="flex:1" onclick="submitReview()">Submit via WhatsApp</button>
+      <button class="btn btn-on" style="flex:0" onclick="closeReviewModal()">Cancel</button>
+    </div>
   </div>
 </div>
 
@@ -878,244 +2385,421 @@ footer{background:var(--navy-dark);color:#fff}
 <div class="toast" id="toast"></div>
 
 <script>
-// ======= DATA =======
-const CARS=[
-  {id:1,make:'Toyota',model:'Land Cruiser V8',year:2020,type:'SUV',price:65000,mi:'48,000 km',fuel:'Petrol',bdg:'Featured',bc:'cbdg-lux',img:'https://images.unsplash.com/photo-1563720223185-11003d516935?w=700&q=80'},
-  {id:2,make:'Mercedes-Benz',model:'GLE 450 AMG',year:2021,type:'SUV',price:72000,mi:'32,000 km',fuel:'Petrol',bdg:'Hot Deal',bc:'cbdg-hot',img:'https://images.unsplash.com/photo-1609521263047-f8f205293f24?w=700&q=80'},
-  {id:3,make:'BMW',model:'X5 xDrive40i',year:2020,type:'SUV',price:58000,mi:'41,000 km',fuel:'Petrol',bdg:'New Arrival',bc:'cbdg-new',img:'https://images.unsplash.com/photo-1556189250-72ba954cfc2b?w=700&q=80'},
-  {id:4,make:'Lexus',model:'RX 350 F-Sport',year:2019,type:'SUV',price:38000,mi:'55,000 km',fuel:'Petrol',bdg:'',bc:'',img:'https://images.unsplash.com/photo-1633703435048-91a0fa69b2c5?w=700&q=80'},
-  {id:5,make:'Cadillac',model:'Escalade Sport',year:2022,type:'SUV',price:95000,mi:'18,000 km',fuel:'Petrol',bdg:'Luxury',bc:'cbdg-lux',img:'https://images.unsplash.com/photo-1627454820609-ef28be3b78ec?w=700&q=80'},
-  {id:6,make:'Toyota',model:'Camry XSE V6',year:2021,type:'Sedan',price:22000,mi:'38,000 km',fuel:'Petrol',bdg:'',bc:'',img:'https://images.unsplash.com/photo-1621007947382-bb3c3994e3fb?w=700&q=80'},
-  {id:7,make:'Ford',model:'F-150 Lariat',year:2020,type:'Truck',price:34000,mi:'62,000 km',fuel:'Petrol',bdg:'',bc:'',img:'https://images.unsplash.com/photo-1571987502951-3cc4c55fce21?w=700&q=80'},
-  {id:8,make:'BMW',model:'5 Series M-Sport',year:2019,type:'Sedan',price:42000,mi:'47,000 km',fuel:'Petrol',bdg:'',bc:'',img:'https://images.unsplash.com/photo-1555215695-3004980ad54e?w=700&q=80'},
-  {id:9,make:'Range Rover',model:'Sport Autobiography',year:2021,type:'SUV',price:118000,mi:'22,000 km',fuel:'Petrol',bdg:'Luxury',bc:'cbdg-lux',img:'https://images.unsplash.com/photo-1606016159991-dfe4f2746ad5?w=700&q=80'},
-  {id:10,make:'Toyota',model:'4Runner TRD Pro',year:2020,type:'SUV',price:44000,mi:'35,000 km',fuel:'Petrol',bdg:'',bc:'',img:'https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?w=700&q=80'},
-  {id:11,make:'Chevrolet',model:'Tahoe Z71',year:2021,type:'SUV',price:52000,mi:'28,000 km',fuel:'Petrol',bdg:'',bc:'',img:'https://images.unsplash.com/photo-1551830820-330a71b99659?w=700&q=80'},
-  {id:12,make:'Mercedes-Benz',model:'E350 Exclusive',year:2020,type:'Sedan',price:48000,mi:'42,000 km',fuel:'Petrol',bdg:'',bc:'',img:'https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?w=700&q=80'},
+/* ======================
+   DATA
+   ====================== */
+const CARS = [
+  {id:1, make:'Toyota', model:'Land Cruiser V8', year:2020, type:'SUV', price:65000, mi:'48,000 km', fuel:'Petrol', bdg:'Featured', bc:'cbdg-lux', img:'https://images.unsplash.com/photo-1563720223185-11003d516935?w=700&q=80'},
+  {id:2, make:'Mercedes-Benz', model:'GLE 450 AMG', year:2021, type:'SUV', price:72000, mi:'32,000 km', fuel:'Petrol', bdg:'Hot Deal', bc:'cbdg-hot', img:'https://images.unsplash.com/photo-1609521263047-f8f205293f24?w=700&q=80'},
+  {id:3, make:'BMW', model:'X5 xDrive40i', year:2020, type:'SUV', price:58000, mi:'41,000 km', fuel:'Petrol', bdg:'New Arrival', bc:'cbdg-new', img:'https://images.unsplash.com/photo-1556189250-72ba954cfc2b?w=700&q=80'},
+  {id:4, make:'Lexus', model:'RX 350 F-Sport', year:2019, type:'SUV', price:38000, mi:'55,000 km', fuel:'Petrol', bdg:'', bc:'', img:'https://images.unsplash.com/photo-1633703435048-91a0fa69b2c5?w=700&q=80'},
+  {id:5, make:'Cadillac', model:'Escalade Sport', year:2022, type:'SUV', price:95000, mi:'18,000 km', fuel:'Petrol', bdg:'Luxury', bc:'cbdg-lux', img:'https://images.unsplash.com/photo-1627454820609-ef28be3b78ec?w=700&q=80'},
+  {id:6, make:'Toyota', model:'Camry XSE V6', year:2021, type:'Sedan', price:22000, mi:'38,000 km', fuel:'Petrol', bdg:'', bc:'', img:'https://images.unsplash.com/photo-1621007947382-bb3c3994e3fb?w=700&q=80'},
+  {id:7, make:'Ford', model:'F-150 Lariat', year:2020, type:'Truck', price:34000, mi:'62,000 km', fuel:'Petrol', bdg:'', bc:'', img:'https://images.unsplash.com/photo-1571987502951-3cc4c55fce21?w=700&q=80'},
+  {id:8, make:'BMW', model:'5 Series M-Sport', year:2019, type:'Sedan', price:42000, mi:'47,000 km', fuel:'Petrol', bdg:'', bc:'', img:'https://images.unsplash.com/photo-1555215695-3004980ad54e?w=700&q=80'},
+  {id:9, make:'Range Rover', model:'Sport Autobiography', year:2021, type:'SUV', price:118000, mi:'22,000 km', fuel:'Petrol', bdg:'Luxury', bc:'cbdg-lux', img:'https://images.unsplash.com/photo-1606016159991-dfe4f2746ad5?w=700&q=80'},
+  {id:10, make:'Toyota', model:'4Runner TRD Pro', year:2020, type:'SUV', price:44000, mi:'35,000 km', fuel:'Petrol', bdg:'', bc:'', img:'https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?w=700&q=80'},
+  {id:11, make:'Chevrolet', model:'Tahoe Z71', year:2021, type:'SUV', price:52000, mi:'28,000 km', fuel:'Petrol', bdg:'', bc:'', img:'https://images.unsplash.com/photo-1551830820-330a71b99659?w=700&q=80'},
+  {id:12, make:'Mercedes-Benz', model:'E350 Exclusive', year:2020, type:'Sedan', price:48000, mi:'42,000 km', fuel:'Petrol', bdg:'', bc:'', img:'https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?w=700&q=80'},
+  {id:13, make:'Porsche', model:'Cayenne S', year:2022, type:'SUV', price:142000, mi:'12,000 km', fuel:'Petrol', bdg:'Luxury', bc:'cbdg-lux', img:'https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=700&q=80'},
+  {id:14, make:'Lamborghini', model:'Urus', year:2021, type:'SUV', price:248000, mi:'9,000 km', fuel:'Petrol', bdg:'Hot Deal', bc:'cbdg-hot', img:'https://images.unsplash.com/photo-1614162692292-7ac56d7f7f1e?w=700&q=80'},
+  {id:15, make:'Aston Martin', model:'DB11 V8', year:2020, type:'Coupe', price:185000, mi:'14,000 km', fuel:'Petrol', bdg:'Luxury', bc:'cbdg-lux', img:'https://images.unsplash.com/photo-1544636331-e26879cd4d9b?w=700&q=80'},
 ];
 
-const REVIEWS=[
-  {nm:'Kwame Asante',init:'K',clr:'#0D2B5E',rt:5,dt:'2 weeks ago',txt:'VicDavis is absolutely the best in Ghana for car imports. I told them exactly what I wanted — a Toyota Land Cruiser V8 — and they sourced it, bid for it, cleared it, and delivered it flawlessly. No stress at all. I saved a lot compared to local dealers.',tags:['Excellent Service','Best Price','Professional']},
-  {nm:'Abena Mensah',init:'A',clr:'#D62828',rt:5,dt:'1 month ago',txt:'I was sceptical about importing from the USA but VicDavis made the whole process completely transparent. They showed me everything — the auction, the bid, the shipping. My BMW X5 arrived in perfect condition. Will absolutely use again!',tags:['Transparent','Fast Delivery','Trustworthy']},
-  {nm:'Kofi Boateng',init:'K',clr:'#1a3f7a',rt:5,dt:'3 months ago',txt:"Got my Mercedes GLE at a price no one else in Accra could match. The team was responsive on WhatsApp throughout the entire process. They even helped sort out my customs duty which saved me a big headache. Highly recommend VicDavis.",tags:['Great Value','WhatsApp Support','Duty Help']},
-  {nm:'Ama Owusu',init:'A',clr:'#7C3AED',rt:5,dt:'2 months ago',txt:'Bought a Lexus RX350 through VicDavis on an installment plan. Payment terms were reasonable and they were patient in answering all my questions. The car is amazing — exactly as described. Very happy with my experience.',tags:['Installment Plan','Patient Team','Quality Car']},
-  {nm:'Yaw Darkwa',init:'Y',clr:'#059669',rt:5,dt:'5 months ago',txt:"VicDavis helped me sell my old Camry quickly and got me a fair price. Same-day response, came to inspect the car, and paid me within 48 hours. Completely trustworthy people. Ghana needs more businesses like this.",tags:['Quick Sale','Fair Price','Cash Payment']},
-  {nm:'Efua Amponsah',init:'E',clr:'#D97706',rt:5,dt:'4 months ago',txt:"As a first-time car buyer I was nervous, but VicDavis guided me through everything step by step. They recommended a reliable Toyota Camry within my budget and handled all the paperwork. I drove off confident and very happy. Thank you!",tags:['First-Time Buyer','Great Guidance','Paperwork Help']},
+const REVIEWS = [
+  {nm:'Kwame Asante', init:'K', clr:'#001F3F', rt:5, dt:'2 weeks ago', txt:'VicDavis is absolutely the best in Ghana for car imports. I told them exactly what I wanted — a Toyota Land Cruiser V8 — and they sourced it, bid for it, cleared it, and delivered it flawlessly. No stress at all. I saved a lot compared to local dealers.', tags:['Excellent Service','Best Price','Professional']},
+  {nm:'Abena Mensah', init:'A', clr:'#D32F2F', rt:5, dt:'1 month ago', txt:'I was sceptical about importing from the USA but VicDavis made the whole process completely transparent. They showed me everything — the auction, the bid, the shipping. My BMW X5 arrived in perfect condition. Will absolutely use again!', tags:['Transparent','Fast Delivery','Trustworthy']},
+  {nm:'Kofi Boateng', init:'K', clr:'#003366', rt:5, dt:'3 months ago', txt:'Got my Mercedes GLE at a price no one else in Accra could match. The team was responsive on WhatsApp throughout the entire process. They even helped sort out my customs duty which saved me a big headache. Highly recommend VicDavis.', tags:['Great Value','WhatsApp Support','Duty Help']},
+  {nm:'Ama Owusu', init:'A', clr:'#6D28D9', rt:5, dt:'2 months ago', txt:'Bought a Lexus RX350 through VicDavis on an installment plan. Payment terms were reasonable and they were patient in answering all my questions. The car is amazing — exactly as described. Very happy with my experience.', tags:['Installment Plan','Patient Team','Quality Car']},
+  {nm:'Yaw Darkwa', init:'Y', clr:'#059669', rt:5, dt:'5 months ago', txt:'VicDavis helped me sell my old Camry quickly and got me a fair price. Same-day response, came to inspect the car, and paid me within 48 hours. Completely trustworthy people. Ghana needs more businesses like this.', tags:['Quick Sale','Fair Price','Cash Payment']},
+  {nm:'Efua Amponsah', init:'E', clr:'#B45309', rt:5, dt:'4 months ago', txt:'As a first-time car buyer I was nervous, but VicDavis guided me through everything step by step. They recommended a reliable Toyota Camry within my budget and handled all the paperwork. I drove off confident and very happy. Thank you!', tags:['First-Time Buyer','Great Guidance','Paperwork Help']},
 ];
 
-const FAQS=[
-  {q:'How does importing a car from the USA work?',a:"We source cars from Copart and IAAI — America's largest auto auction platforms. You tell us what you want (or we help you find it), we bid live on your behalf, handle all shipping and logistics, clear the car at the port, and deliver it to you in Ghana. The process typically takes 6–10 weeks from auction win to delivery."},
-  {q:'What is the price range of cars at VicDavis Auto Link?',a:'Our inventory starts from $8,000 for quality used vehicles and goes up to $200,000+ for premium and luxury models. We source all makes including Toyota, Mercedes-Benz, BMW, Lexus, Range Rover, Ford, Chevrolet, Cadillac and more.'},
-  {q:'Do you offer installment payment plans?',a:'Yes! We offer flexible installment plans tailored to your budget. Use our Payment Estimator on this page to get a rough idea, then contact us to discuss your specific situation and we will structure a plan that works for you.'},
-  {q:'How do you calculate car duties before purchase?',a:'We calculate all applicable import duties before you commit to a purchase, so you know the complete cost upfront with no surprises at the port. We also handle all duty documentation and clearance.'},
-  {q:'Can I sell my car to VicDavis Auto Link?',a:"Yes, we buy used vehicles. Fill in the 'Get a Quote' form above or WhatsApp us your car details (make, model, year, mileage, condition). We'll assess and make you a competitive cash offer, usually within 24 hours."},
-  {q:'Are the imported cars inspected before delivery?',a:"All vehicles undergo a condition assessment. Cars from USA auctions are described honestly based on auction inspection reports. We always give you a clear, transparent picture of a vehicle's condition before you commit to purchasing."},
-  {q:'How long does the full import process take?',a:'From auction win to delivery in Ghana typically takes 6–10 weeks depending on shipping schedules and port clearance timelines. We keep you updated throughout the entire journey with regular progress reports.'},
+const FAQS = [
+  {q:'How does importing a car from the USA work?', a:"We source cars from Copart and IAAI — America's largest auto auction platforms. You tell us what you want (or we help you find it), we bid live on your behalf, handle all shipping and logistics, clear the car at the port, and deliver it to you in Ghana. The process typically takes 6–10 weeks from auction win to delivery."},
+  {q:'What is the price range of cars at VicDavis Auto Link?', a:'Our inventory starts from $8,000 for quality used vehicles and goes up to $250,000+ for premium and luxury models. We source all makes including Toyota, Mercedes-Benz, BMW, Lexus, Range Rover, Ford, Chevrolet, Cadillac, Porsche and more.'},
+  {q:'Do you offer installment payment plans?', a:'Yes! We offer flexible installment plans tailored to your budget. Use our Payment Estimator on this page to get a rough idea, then contact us to discuss your specific situation and we will structure a plan that works for you.'},
+  {q:'How do you calculate car duties before purchase?', a:'We calculate all applicable import duties before you commit to a purchase, so you know the complete cost upfront with no surprises at the port. We also handle all duty documentation and clearance.'},
+  {q:'Can I sell my car to VicDavis Auto Link?', a:"Yes, we buy used vehicles. Fill in the 'Get a Quote' form above or WhatsApp us your car details (make, model, year, mileage, condition). We'll assess and make you a competitive cash offer, usually within 24 hours."},
+  {q:'Are the imported cars inspected before delivery?', a:"All vehicles undergo a condition assessment. Cars from USA auctions are described honestly based on auction inspection reports. We always give you a clear, transparent picture of a vehicle's condition before you commit to purchasing."},
+  {q:'How long does the full import process take?', a:'From auction win to delivery in Ghana typically takes 6–10 weeks depending on shipping schedules and port clearance timelines. We keep you updated throughout the entire journey with regular progress reports.'},
 ];
 
-// ======= STATE =======
-let vis=6, selBType='', wl=[];
-try{wl=JSON.parse(localStorage.getItem('vd_wl')||'[]')}catch(e){}
+/* ======================
+   STATE
+   ====================== */
+let vis = 6, selBType = '', savedSet = new Set(), likedSet = new Set(), starRating = 0;
+try {
+  const sv = localStorage.getItem('vd_saved');
+  const lk = localStorage.getItem('vd_liked');
+  if (sv) JSON.parse(sv).forEach(id => savedSet.add(id));
+  if (lk) JSON.parse(lk).forEach(id => likedSet.add(id));
+} catch(e) {}
 
-// ======= INIT =======
-document.addEventListener('DOMContentLoaded',()=>{
-  renderCars();renderReviews();renderFAQs();
-  checkOpen();initAnim();initCount();
-  document.getElementById('fyr').textContent=new Date().getFullYear();
-  document.getElementById('bdt').min=new Date().toISOString().split('T')[0];
-});
-
-// ======= NAV =======
-window.addEventListener('scroll',()=>{
-  document.getElementById('nb').classList.toggle('sc',window.scrollY>60);
-});
-function toggleMnav(){const n=document.getElementById('mnav'),h=document.getElementById('hbg');n.classList.toggle('op');h.classList.toggle('op')}
-function closeMnav(){document.getElementById('mnav').classList.remove('op');document.getElementById('hbg').classList.remove('op')}
-
-// ======= RENDER CARS =======
-function renderCars(f={}){
-  const g=document.getElementById('cgrid');
-  let cars=[...CARS];
-  if(f.make) cars=cars.filter(c=>c.make===f.make);
-  if(f.type) cars=cars.filter(c=>c.type===f.type);
-  if(f.price) cars=cars.filter(c=>c.price<=+f.price);
-  if(f.year) cars=cars.filter(c=>c.year>=+f.year);
-  const show=cars.slice(0,vis);
-  document.getElementById('lmw').style.display=cars.length>vis?'block':'none';
-  if(!show.length){
-    g.innerHTML=`<div style="grid-column:1/-1;text-align:center;padding:60px 20px">
-      <div style="font-size:48px;margin-bottom:14px">🔍</div>
-      <h3 style="font-family:var(--fd);font-size:22px;color:var(--tm)">No cars match your search</h3>
-      <p style="color:var(--tl);margin:8px 0 22px;font-size:13px">Adjust your filters or request a specific car</p>
-      <a href="https://wa.me/233577551078?text=Hello!%20I%20am%20looking%20for%20a%20specific%20car%20and%20couldn%27t%20find%20it%20in%20your%20inventory.%20Can%20you%20help?" target="_blank" class="btn btn-r">Request Your Car on WhatsApp</a>
-    </div>`;
-    return;
-  }
-  g.innerHTML=show.map(c=>`
-    <div class="cc fu">
-      <div class="cc-img">
-        <img src="${c.img}" alt="${c.make} ${c.model}" loading="lazy" onerror="this.src='https://placehold.co/700x400/0D2B5E/FFFFFF?text=${encodeURIComponent(c.make+' '+c.model)}'">
-        ${c.bdg?`<div class="cbdg ${c.bc}">${c.bdg}</div>`:''}
-        <button class="cwl" onclick="togWL(${c.id},this)">${wl.includes(c.id)?'❤️':'🤍'}</button>
-      </div>
-      <div class="ccb">
-        <div class="cmk">${c.make}</div>
-        <div class="cnm">${c.model} · ${c.year}</div>
-        <div class="csps">
-          <span class="csp">🛣️ ${c.mi}</span>
-          <span class="csp">⛽ ${c.fuel}</span>
-          <span class="csp">📦 ${c.type}</span>
-        </div>
-        <div class="cpr">
-          <div>
-            <div class="cprice">$${c.price.toLocaleString()}</div>
-            <div class="cmo">~$${Math.round((c.price-c.price*.2)/24).toLocaleString()}/mo est.</div>
-          </div>
-          <a href="https://wa.me/233577551078?text=Hello%20VicDavis!%20I%27m%20interested%20in%20the%20${encodeURIComponent(c.year+' '+c.make+' '+c.model)}%20priced%20at%20%24${c.price.toLocaleString()}.%20Please%20tell%20me%20more." target="_blank" class="btn btn-r btn-sm">Enquire</a>
-        </div>
-      </div>
-    </div>`).join('');
+/* ======================
+   INVENTORY RENDER
+   ====================== */
+function renderCars() {
+  const make = document.getElementById('fm').value;
+  const type = document.getElementById('ftype').value;
+  const price = +document.getElementById('fprice').value;
+  const year = +document.getElementById('fyear').value;
+  const filtered = CARS.filter(c =>
+    (!make || c.make === make) &&
+    (!type || c.type === type) &&
+    (!price || c.price <= price) &&
+    (!year || c.year >= year)
+  );
+  const toShow = filtered.slice(0, vis);
+  document.getElementById('cgrid').innerHTML = toShow.length
+    ? toShow.map(c => carCard(c)).join('')
+    : '<p style="color:var(--text-light);grid-column:1/-1;text-align:center;padding:40px 0">No vehicles match your filters. Try adjusting your search.</p>';
+  document.getElementById('lmw').style.display = vis >= filtered.length ? 'none' : 'block';
   initAnim();
 }
-function filt(){vis=6;renderCars({make:V('fm'),type:V('ftype'),price:V('fprice'),year:V('fyear')})}
-function clearF(){['fm','ftype','fprice','fyear'].forEach(id=>document.getElementById(id).value='');vis=6;renderCars()}
-function loadMore(){vis+=6;filt()}
-function heroSearch(){
-  document.getElementById('inv').scrollIntoView({behavior:'smooth'});
-  setTimeout(()=>{
-    document.getElementById('fm').value=V('hm');
-    document.getElementById('ftype').value=V('ht');
-    document.getElementById('fprice').value=V('hp');
-    filt();
-  },600);
-}
-function togWL(id,el){
-  if(wl.includes(id)){wl=wl.filter(w=>w!==id);el.textContent='🤍';toast('Removed from saved cars')}
-  else{wl.push(id);el.textContent='❤️';toast('Saved! ❤️','success')}
-  try{localStorage.setItem('vd_wl',JSON.stringify(wl))}catch(e){}
+
+function carCard(c) {
+  const isLiked = likedSet.has(c.id);
+  const isSaved = savedSet.has(c.id);
+  return `
+  <div class="cc fu" data-id="${c.id}">
+    <div class="cc-img">
+      <img src="${c.img}" alt="${c.make} ${c.model}" loading="lazy">
+      ${c.bdg ? `<span class="cbdg ${c.bc}">${c.bdg}</span>` : ''}
+      <div class="cc-actions">
+        <button class="cc-action-btn ${isLiked ? 'liked' : ''}" onclick="toggleLike(${c.id},this)" title="${isLiked ? 'Remove from liked' : 'Like'}">
+          <svg viewBox="0 0 24 24" ${isLiked ? 'fill="var(--red)"' : 'fill="none" stroke="currentColor" stroke-width="2"'}><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+        </button>
+        <button class="cc-action-btn ${isSaved ? 'saved' : ''}" onclick="toggleSave(${c.id},this)" title="${isSaved ? 'Remove from saved' : 'Save'}">
+          <svg viewBox="0 0 24 24" ${isSaved ? 'fill="var(--navy)"' : 'fill="none" stroke="currentColor" stroke-width="2"'}><path d="M19 21l-7-5-7 5V5a2 2 0 012-2h10a2 2 0 012 2z"/></svg>
+        </button>
+      </div>
+    </div>
+    <div class="ccb">
+      <div class="cmk">${c.make}</div>
+      <div class="cnm">${c.model}</div>
+      <div class="csps">
+        <span class="csp">
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+          ${c.year}
+        </span>
+        <span class="csp">
+          <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 100 20A10 10 0 0012 2zm0 18a8 8 0 110-16 8 8 0 010 16z"/><path d="M12 6v6l4 2"/></svg>
+          ${c.mi}
+        </span>
+        <span class="csp">
+          <svg viewBox="0 0 24 24"><path d="M19 7h-1V5a1 1 0 00-1-1H7a1 1 0 00-1 1v2H5a3 3 0 00-3 3v9a1 1 0 001 1h18a1 1 0 001-1v-9a3 3 0 00-3-3z"/></svg>
+          ${c.fuel}
+        </span>
+      </div>
+      <div class="cpr">
+        <div>
+          <div class="cprice">$${c.price.toLocaleString()}</div>
+          <div class="cmo">+ import duty & clearing</div>
+        </div>
+        <a href="https://wa.me/233577551078?text=Hello%20VicDavis!%20I%27m%20interested%20in%20the%20${encodeURIComponent(c.year+' '+c.make+' '+c.model)}%20listed%20for%20$${c.price.toLocaleString()}.%20Please%20tell%20me%20more." target="_blank" class="cc-cta">
+          Enquire
+          <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>`;
 }
 
-// ======= CALCULATOR =======
-function updCalc(){
-  const p=+V('cp'),d=+V('cd'),t=+V('ct');
-  document.getElementById('pd').textContent='$'+p.toLocaleString();
-  document.getElementById('dd').textContent='$'+d.toLocaleString();
-  document.getElementById('td').textContent=t+' months';
-  document.getElementById('cr').textContent=Math.round((p-d)/t).toLocaleString();
+function toggleLike(id, btn) {
+  if (likedSet.has(id)) {
+    likedSet.delete(id);
+    btn.classList.remove('liked');
+    btn.innerHTML = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>`;
+    showToast('Removed from liked');
+  } else {
+    likedSet.add(id);
+    btn.classList.add('liked');
+    btn.innerHTML = `<svg viewBox="0 0 24 24" fill="var(--red)"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>`;
+    showToast('Added to liked vehicles');
+  }
+  try { localStorage.setItem('vd_liked', JSON.stringify([...likedSet])); } catch(e) {}
 }
 
-// ======= REVIEWS =======
-function renderReviews(){
-  document.getElementById('tgrid').innerHTML=REVIEWS.map(r=>`
+function toggleSave(id, btn) {
+  if (savedSet.has(id)) {
+    savedSet.delete(id);
+    btn.classList.remove('saved');
+    btn.innerHTML = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 21l-7-5-7 5V5a2 2 0 012-2h10a2 2 0 012 2z"/></svg>`;
+    showToast('Removed from saved');
+  } else {
+    savedSet.add(id);
+    btn.classList.add('saved');
+    btn.innerHTML = `<svg viewBox="0 0 24 24" fill="var(--navy)"><path d="M19 21l-7-5-7 5V5a2 2 0 012-2h10a2 2 0 012 2z"/></svg>`;
+    showToast('Vehicle saved');
+  }
+  try { localStorage.setItem('vd_saved', JSON.stringify([...savedSet])); } catch(e) {}
+}
+
+function filt() { vis = 6; renderCars(); }
+function clearF() {
+  ['fm','ftype','fprice','fyear'].forEach(id => document.getElementById(id).value = '');
+  vis = 6; renderCars();
+}
+function loadMore() { vis += 6; renderCars(); }
+
+function heroSearch() {
+  const make = document.getElementById('hm').value;
+  const price = document.getElementById('hp').value;
+  const type = document.getElementById('ht').value;
+  if (make) document.getElementById('fm').value = make;
+  if (price) document.getElementById('fprice').value = price;
+  if (type) document.getElementById('ftype').value = type;
+  document.getElementById('inv').scrollIntoView({ behavior: 'smooth' });
+  filt();
+}
+
+/* ======================
+   REVIEWS
+   ====================== */
+function renderReviews() {
+  document.getElementById('tgrid').innerHTML = REVIEWS.map(r => `
     <div class="rc fu">
       <div class="rh">
         <div class="rav" style="background:${r.clr}">${r.init}</div>
         <div class="ri">
           <h4>${r.nm}</h4>
-          <div class="rm"><div class="stars">${'★'.repeat(r.rt)}</div><span class="rdate">${r.dt}</span></div>
+          <div class="rm">
+            <div class="stars">${'★'.repeat(r.rt)}</div>
+            <span class="rdate">${r.dt}</span>
+          </div>
+          <div class="verified-badge">
+            <svg viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" stroke="currentColor" stroke-width="1.5" fill="none"/></svg>
+            Verified Customer
+          </div>
         </div>
-        <div class="gb"><img src="https://www.google.com/favicon.ico" style="width:16px;height:16px" alt="G"></div>
+        <div class="gb">
+          <svg viewBox="0 0 24 24" width="20" height="20"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+        </div>
       </div>
-      <p class="rt">${r.txt}</p>
-      <div class="rtags">${r.tags.map(t=>`<span class="rtag">+ ${t}</span>`).join('')}</div>
+      <p class="rtxt">${r.txt}</p>
+      <div class="rtags">${r.tags.map(t => `<span class="rtag">+ ${t}</span>`).join('')}</div>
     </div>`).join('');
 }
 
-// ======= FAQS =======
-function renderFAQs(){
-  document.getElementById('faql').innerHTML=FAQS.map((f,i)=>`
+/* ======================
+   FAQS
+   ====================== */
+function renderFAQs() {
+  document.getElementById('faql').innerHTML = FAQS.map((f, i) => `
     <div class="fi" id="fi${i}">
       <div class="fq" onclick="togFAQ(${i})">${f.q}<div class="fic">+</div></div>
       <div class="fa">${f.a}</div>
     </div>`).join('');
 }
-function togFAQ(i){
-  const it=document.getElementById('fi'+i),was=it.classList.contains('op');
-  document.querySelectorAll('.fi').forEach(e=>e.classList.remove('op'));
-  if(!was)it.classList.add('op');
+function togFAQ(i) {
+  const it = document.getElementById('fi' + i), was = it.classList.contains('op');
+  document.querySelectorAll('.fi').forEach(e => e.classList.remove('op'));
+  if (!was) it.classList.add('op');
 }
 
-// ======= BOOKING =======
-function openBook(type=''){
+/* ======================
+   CALCULATOR
+   ====================== */
+function calcR() {
+  const p = +document.getElementById('vp').value;
+  const d = +document.getElementById('dp').value;
+  const t = +document.getElementById('tm').value;
+  document.getElementById('cvp').textContent = '$' + p.toLocaleString();
+  document.getElementById('cdp').textContent = '$' + d.toLocaleString();
+  document.getElementById('ctm').textContent = t;
+  document.getElementById('cr').textContent = Math.round((p - d) / t).toLocaleString();
+}
+
+/* ======================
+   REVIEW MODAL
+   ====================== */
+function openReviewModal() { document.getElementById('revModal').classList.add('op'); document.body.style.overflow = 'hidden'; }
+function closeReviewModal() { document.getElementById('revModal').classList.remove('op'); document.body.style.overflow = ''; }
+function revOverClick(e) { if (e.target === document.getElementById('revModal')) closeReviewModal(); }
+function setStar(n) {
+  starRating = n;
+  document.querySelectorAll('#starSel span').forEach((s, i) => {
+    s.classList.toggle('active', i < n);
+  });
+}
+function submitReview() {
+  const nm = document.getElementById('rvnm').value.trim();
+  const txt = document.getElementById('rvtxt').value.trim();
+  if (!nm || !txt) { showToast('Please fill in all fields', 'error'); return; }
+  const stars = starRating ? '★'.repeat(starRating) + '☆'.repeat(5-starRating) : 'No rating';
+  const msg = `Hello VicDavis Auto Link!\n\nI'd like to leave a review:\nName: ${nm}\nRating: ${stars}\nReview: ${txt}`;
+  window.open(`https://wa.me/233577551078?text=${encodeURIComponent(msg)}`, '_blank');
+  closeReviewModal();
+  showToast('Thank you! Redirecting to WhatsApp.');
+}
+
+/* ======================
+   BOOKING
+   ====================== */
+function openBook(type = '') {
   document.getElementById('bmod').classList.add('op');
-  document.body.style.overflow='hidden';
-  if(type){
-    document.querySelectorAll('.bt').forEach(el=>{
-      el.classList.toggle('sel',el.querySelector('p').textContent.trim()===type);
+  document.body.style.overflow = 'hidden';
+  if (type) {
+    document.querySelectorAll('.bt').forEach(el => {
+      el.classList.toggle('sel', el.querySelector('p').textContent.trim() === type);
     });
-    selBType=type;
+    selBType = type;
   }
 }
-function closeBook(){document.getElementById('bmod').classList.remove('op');document.body.style.overflow=''}
-function ovClick(e){if(e.target===document.getElementById('bmod'))closeBook()}
-function selBT(el,t){document.querySelectorAll('.bt').forEach(b=>b.classList.remove('sel'));el.classList.add('sel');selBType=t}
-function submitBook(){
-  const nm=V('bnm').trim(),ph=V('bph').trim();
-  if(!nm||!ph){toast('Please enter your name and phone number.','error');return}
-  const msg=`Hello VicDavis Auto Link!\n\n📅 Booking Request\nType: ${selBType||'General Consultation'}\nName: ${nm}\nPhone: ${ph}\nDate: ${V('bdt')||'Flexible'}\nNotes: ${V('bnt')||'None'}`;
-  window.open(`https://wa.me/233577551078?text=${encodeURIComponent(msg)}`,'_blank');
+function closeBook() { document.getElementById('bmod').classList.remove('op'); document.body.style.overflow = ''; }
+function ovClick(e) { if (e.target === document.getElementById('bmod')) closeBook(); }
+function selBT(el, t) { document.querySelectorAll('.bt').forEach(b => b.classList.remove('sel')); el.classList.add('sel'); selBType = t; }
+function submitBook() {
+  const nm = V('bnm').trim(), ph = V('bph').trim();
+  if (!nm || !ph) { showToast('Please enter your name and phone number.', 'error'); return; }
+  const msg = `Hello VicDavis Auto Link!\n\nBooking Request\nType: ${selBType || 'General Consultation'}\nName: ${nm}\nPhone: ${ph}\nDate: ${V('bdt') || 'Flexible'}\nNotes: ${V('bnt') || 'None'}`;
+  window.open(`https://wa.me/233577551078?text=${encodeURIComponent(msg)}`, '_blank');
   closeBook();
-  toast('Redirecting to WhatsApp to confirm! ✅','success');
+  showToast('Redirecting to WhatsApp to confirm');
 }
 
-// ======= FORMS =======
-function submitSell(){
-  const mk=V('smk').trim(),nm=V('snm').trim(),ph=V('sph').trim();
-  if(!mk||!nm||!ph){toast('Please fill in make, name, and phone.','error');return}
-  const msg=`Hello VicDavis! I want to sell my car:\n🚗 ${V('syr')} ${mk} ${V('smo')}\nMileage: ${V('smi')||'Not specified'}\nName: ${nm}\nPhone: ${ph}\n\nPlease give me a quote.`;
-  window.open(`https://wa.me/233577551078?text=${encodeURIComponent(msg)}`,'_blank');
-  toast('Connecting via WhatsApp! ✅','success');
+/* ======================
+   FORMS
+   ====================== */
+function submitSell() {
+  const mk = V('smk').trim(), nm = V('snm').trim(), ph = V('sph').trim();
+  if (!mk || !nm || !ph) { showToast('Please fill in make, name, and phone.', 'error'); return; }
+  const msg = `Hello VicDavis! I want to sell my car:\n${V('syr')} ${mk} ${V('smo')}\nMileage: ${V('smi') || 'Not specified'}\nName: ${nm}\nPhone: ${ph}\n\nPlease give me a quote.`;
+  window.open(`https://wa.me/233577551078?text=${encodeURIComponent(msg)}`, '_blank');
+  showToast('Connecting via WhatsApp');
 }
-function submitContact(){
-  const nm=V('ctnm').trim(),ph=V('ctph').trim();
-  if(!nm||!ph){toast('Please provide your name and phone.','error');return}
-  const msg=`Hello VicDavis Auto Link!\n\nEnquiry: ${V('ctsj')}\nName: ${nm}\nPhone: ${ph}\nEmail: ${V('ctem')||'Not provided'}\n\nMessage: ${V('ctmg')||'None'}`;
-  window.open(`https://wa.me/233577551078?text=${encodeURIComponent(msg)}`,'_blank');
-  ['ctnm','ctph','ctem','ctmg'].forEach(id=>document.getElementById(id).value='');
-  toast('Message sent via WhatsApp! ✅','success');
-}
-
-// ======= OPEN STATUS =======
-function checkOpen(){
-  const h=new Date().getHours(),b=document.getElementById('opbdg');
-  if(h>=9&&h<22){b.textContent='Open Now';b.style.background='var(--green)'}
-  else{b.textContent='Closed — Opens 9AM';b.style.background='var(--tl)'}
+function submitContact() {
+  const nm = V('ctnm').trim(), ph = V('ctph').trim();
+  if (!nm || !ph) { showToast('Please provide your name and phone.', 'error'); return; }
+  const msg = `Hello VicDavis Auto Link!\n\nEnquiry: ${V('ctsj')}\nName: ${nm}\nPhone: ${ph}\nEmail: ${V('ctem') || 'Not provided'}\n\nMessage: ${V('ctmg') || 'None'}`;
+  window.open(`https://wa.me/233577551078?text=${encodeURIComponent(msg)}`, '_blank');
+  ['ctnm','ctph','ctem','ctmg'].forEach(id => { document.getElementById(id).value = ''; });
+  showToast('Message sent via WhatsApp');
 }
 
-// ======= TOAST =======
-function toast(msg,type=''){
-  const el=document.getElementById('toast');
-  el.textContent=(type==='success'?'✅ ':type==='error'?'❌ ':'')+msg;
-  el.className='toast show';
-  setTimeout(()=>el.classList.remove('show'),3500);
+/* ======================
+   OPEN STATUS
+   ====================== */
+function checkOpen() {
+  const h = new Date().getHours(), b = document.getElementById('opbdg');
+  if (h >= 9 && h < 22) { b.textContent = 'Open Now'; b.style.background = 'var(--green)'; }
+  else { b.textContent = 'Closed — Opens 9AM'; b.style.background = 'var(--text-light)'; }
 }
 
-// ======= SCROLL ANIM =======
-function initAnim(){
-  const obs=new IntersectionObserver(entries=>{
-    entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('vis');obs.unobserve(e.target)}});
-  },{threshold:.1});
-  document.querySelectorAll('.fu:not(.vis)').forEach(el=>obs.observe(el));
+/* ======================
+   TOAST
+   ====================== */
+function showToast(msg, type = '') {
+  const el = document.getElementById('toast');
+  const icon = type === 'error'
+    ? `<svg viewBox="0 0 24 24" fill="none" stroke="#ff6b6b" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg>`
+    : `<svg viewBox="0 0 24 24" fill="none" stroke="#4ade80" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>`;
+  el.innerHTML = icon + msg;
+  el.className = 'toast show';
+  setTimeout(() => el.classList.remove('show'), 3500);
 }
 
-// ======= COUNTER =======
-function initCount(){
-  const obs=new IntersectionObserver(entries=>{
-    entries.forEach(e=>{
-      if(e.isIntersecting){
-        const el=e.target,tgt=+el.dataset.count;
-        if(!tgt)return;
-        let cur=0;const step=Math.ceil(tgt/40);
-        const iv=setInterval(()=>{cur=Math.min(cur+step,tgt);el.textContent=cur+'+';if(cur>=tgt)clearInterval(iv)},40);
-        obs.unobserve(el);
-      }
+/* ======================
+   NAVBAR SCROLL
+   ====================== */
+window.addEventListener('scroll', () => {
+  document.getElementById('nb').classList.toggle('sc', window.scrollY > 20);
+});
+
+/* ======================
+   SMOOTH SCROLL (Vanilla, no browser scroll-behavior)
+   ====================== */
+function smoothTo(id) {
+  const el = document.getElementById(id);
+  if (!el) return;
+  const top = el.getBoundingClientRect().top + window.pageYOffset - 80;
+  window.scrollTo({ top, behavior: 'smooth' });
+}
+
+/* Link interception for in-page anchor links */
+document.addEventListener('click', e => {
+  const a = e.target.closest('a[href^="#"]');
+  if (!a) return;
+  e.preventDefault();
+  const id = a.getAttribute('href').slice(1);
+  const el = document.getElementById(id);
+  if (el) {
+    const top = el.getBoundingClientRect().top + window.pageYOffset - 80;
+    window.scrollTo({ top, behavior: 'smooth' });
+  }
+});
+
+/* ======================
+   TYPEWRITER EFFECT
+   ====================== */
+function typeWriter() {
+  const lines = [
+    { el: document.getElementById('tw-line1'), text: 'FIND YOUR' },
+    { el: document.getElementById('tw-line2'), text: 'DREAM CAR' },
+    { el: document.getElementById('tw-line3'), text: 'IN GHANA' },
+  ];
+  lines.forEach(l => { l.el.textContent = ''; });
+  let li = 0, ci = 0;
+  const cursor = document.getElementById('tw-cursor');
+
+  function type() {
+    if (li >= lines.length) { cursor.style.display = 'none'; return; }
+    const line = lines[li];
+    if (ci < line.text.length) {
+      line.el.textContent += line.text[ci++];
+      setTimeout(type, 55);
+    } else {
+      li++; ci = 0;
+      if (li < lines.length) setTimeout(type, 180);
+      else cursor.style.display = 'none';
+    }
+  }
+  setTimeout(type, 600);
+}
+
+/* ======================
+   SCROLL ANIMATIONS
+   ====================== */
+function initAnim() {
+  const obs = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (e.isIntersecting) { e.target.classList.add('vis'); obs.unobserve(e.target); }
     });
-  },{threshold:.5});
-  document.querySelectorAll('[data-count]').forEach(el=>obs.observe(el));
+  }, { threshold: 0.08 });
+  document.querySelectorAll('.fu:not(.vis)').forEach(el => obs.observe(el));
 }
 
-// ======= HELPER =======
-function V(id){return document.getElementById(id).value}
+/* ======================
+   MOBILE NAV
+   ====================== */
+function toggleMnav() {
+  document.getElementById('mnav').classList.toggle('op');
+  document.getElementById('hbg').classList.toggle('op');
+}
+function closeMnav() {
+  document.getElementById('mnav').classList.remove('op');
+  document.getElementById('hbg').classList.remove('op');
+}
+
+/* ======================
+   HELPER
+   ====================== */
+function V(id) { return document.getElementById(id).value; }
+
+/* ======================
+   INIT
+   ====================== */
+document.addEventListener('DOMContentLoaded', () => {
+  document.getElementById('fyr').textContent = new Date().getFullYear();
+  renderCars();
+  renderReviews();
+  renderFAQs();
+  calcR();
+  checkOpen();
+  typeWriter();
+  initAnim();
+});
 </script>
 </body>
 </html>
